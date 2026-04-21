@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Autenticación en Serenity Demo" skipped="1" tests="1" time="3.15" timestamp="2026-04-15 01:28:47"><testcase name="Login exitoso"><compromised message="Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'" type="net.serenitybdd.model.environment.UndefinedEnvironmentVariableException">Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'</compromised><system-err>Environment 'environments.qa.webdriver.base.url' property undefined for environment '[]'&#13;
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.lambda$getProperty$11(EnvironmentSpecificConfiguration.java:196)&#13;
+net.serenitybdd.model.environment.EnvironmentSpecificConfiguration.getProperty(EnvironmentSpecificConfiguration.java:192)&#13;
+com.qa.serenity.stepDefinitions.LoginStepDefinition.elUsuarioAbreLaPaginaDeLogin(LoginStepDefinition.java:20)&#13;
+✽.el usuario abre la pagina de login(file:///C:/Automatizaciones/youtube_e2e_aut/serenity_login_e2e_aut/src/test/resources/features/login.feature:5)&#13;
+</system-err></testcase></testsuite>

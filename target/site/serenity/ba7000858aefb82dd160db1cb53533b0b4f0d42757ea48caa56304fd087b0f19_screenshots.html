@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b93f978f1dfcb432e0356eeb3ffcb0c685fa5623a1f2aa06685078ee2d74e5ff.html">Sales Order Management In The Serenity Demo Platform</a></span>
+                > <span class="truncate-60"><a
+                    href="ba7000858aefb82dd160db1cb53533b0b4f0d42757ea48caa56304fd087b0f19.html">Successful creation of a basic order with one product </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-04-2026 19:35</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Sales Order Management In The Serenity Demo Platform </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a registered employee in the system<br />
+I want to register new orders<br />
+So that I can document the sales made to customers
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0ed76be6f6f62391876cac6bd45eecb67add4684a6cfcc25291ca12cc1e4404c.html">Orders
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Successful creation of a basic order with one product
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" user opens the browser at https://demo.serenity.is/" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task (completed)" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" When the user sends the credentials
+| admin |
+| serenity |" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" User login task" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" User enter text" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" User enter text" width="0"/>
+                <img src="dfac704a88fb8cab7d140f4df50573d16cd5a07e9cb56fc48fa211518c74ae4e.png" title=" User enter text (completed)" width="0"/>
+                <img src="dfac704a88fb8cab7d140f4df50573d16cd5a07e9cb56fc48fa211518c74ae4e.png" title=" User click on" width="0"/>
+                <img src="801eccb0bf15637f5b83c81beaa45ed96473b22c273c5a8eb588459e3b75701c.png" title=" User click on (completed)" width="0"/>
+                <img src="801eccb0bf15637f5b83c81beaa45ed96473b22c273c5a8eb588459e3b75701c.png" title=" User login task (completed)" width="0"/>
+                <img src="801eccb0bf15637f5b83c81beaa45ed96473b22c273c5a8eb588459e3b75701c.png" title=" When the user sends the credentials
+| admin |
+| serenity | (completed)" width="0"/>
+                <img src="f38cc478ac8de72cc82b3a26d43701b78e99d37a2d0a38c7566057233f753f54.png" title=" When the user navigates to the &quot;Orders&quot; section in the &quot;Northwind&quot; module" width="0"/>
+                <img src="f38cc478ac8de72cc82b3a26d43701b78e99d37a2d0a38c7566057233f753f54.png" title=" User navigate to orders task" width="0"/>
+                <img src="f38cc478ac8de72cc82b3a26d43701b78e99d37a2d0a38c7566057233f753f54.png" title=" user clicks on Toggle navigation" width="0"/>
+                <img src="931ca6882128928a5e64714c3ee2e97ee75223b15f2b9408624c7271eeab7593.png" title=" user clicks on Toggle navigation (completed)" width="0"/>
+                <img src="931ca6882128928a5e64714c3ee2e97ee75223b15f2b9408624c7271eeab7593.png" title=" user clicks on menu northwind" width="0"/>
+                <img src="69fbd5ad911a7a5e1be43798f706d15ef0ef28b464a0f010fa035eb958fe8bcd.png" title=" user clicks on menu northwind (completed)" width="0"/>
+                <img src="69fbd5ad911a7a5e1be43798f706d15ef0ef28b464a0f010fa035eb958fe8bcd.png" title=" user clicks on orders option" width="0"/>
+                <img src="0d432b29efc313a0aa65bd2dc9099b21d95f7e4d61ca7eb9772b7b2724eb3bd5.png" title=" user clicks on orders option (completed)" width="0"/>
+                <img src="0d432b29efc313a0aa65bd2dc9099b21d95f7e4d61ca7eb9772b7b2724eb3bd5.png" title=" User navigate to orders task (completed)" width="0"/>
+                <img src="60b9d60067018eb2185cdbacd9bb0ebdae3ffa9e94685d395a3ce9f3af6d793d.png" title=" When the user navigates to the &quot;Orders&quot; section in the &quot;Northwind&quot; module (completed)" width="0"/>
+                <img src="4f171262959b10c36970933bad624f2cd6ba309c9231cd08bd07848ea8f4f81e.png" title=" And creates a new order with the following main information:
+| Customer | Alfreds Futterkiste |
+| Order Date | current |
+| Employee | Laura Callahan |" width="0"/>
+                <img src="4f171262959b10c36970933bad624f2cd6ba309c9231cd08bd07848ea8f4f81e.png" title=" User create order task" width="0"/>
+                <img src="4f171262959b10c36970933bad624f2cd6ba309c9231cd08bd07848ea8f4f81e.png" title=" user clicks on bot&oacute;n de nueva orden" width="0"/>
+                <img src="4f171262959b10c36970933bad624f2cd6ba309c9231cd08bd07848ea8f4f81e.png" title=" user clicks on campo de cliente" width="0"/>
+                <img src="c69ccdd5622c394c3774590b2fabda959b473d5b6e62fb1748a8e4a859c42373.png" title=" user clicks on campo de cliente (completed)" width="0"/>
+                <img src="c69ccdd5622c394c3774590b2fabda959b473d5b6e62fb1748a8e4a859c42373.png" title=" user enters 'Alfreds Futterkiste' into campo de cliente" width="0"/>
+                <img src="9256c55a9a0d01979dcad91b3f3579e7051cf3ee1db25a31cdecb821fd4a8023.png" title=" user enters 'Alfreds Futterkiste' into campo de cliente (completed)" width="0"/>
+                <img src="e781864fcc0409a6091c32887e37ea8e6954e88fa92676fb031df463e4f3291b.png" title=" user clicks on campo de cliente" width="0"/>
+                <img src="c228b22aad11d95451190c2e73a35f4e6ea05ad313af34f14cd60db1a57695f6.png" title=" user clicks on campo de cliente (completed)" width="0"/>
+                <img src="c228b22aad11d95451190c2e73a35f4e6ea05ad313af34f14cd60db1a57695f6.png" title=" user clicks on campo de fecha de pedido" width="0"/>
+                <img src="08f3d07301fbca001efe293d7ccaa7d55e2c7fa0f7a3391b3bc9e043abc354af.png" title=" user clicks on campo de fecha de pedido (completed)" width="0"/>
+                <img src="08f3d07301fbca001efe293d7ccaa7d55e2c7fa0f7a3391b3bc9e043abc354af.png" title=" user clears field campo de fecha de pedido" width="0"/>
+                <img src="003ed343df8dc293b93222441a78cff123fd6b37cf496510ec2646043a27b132.png" title=" user clears field campo de fecha de pedido (completed)" width="0"/>
+                <img src="003ed343df8dc293b93222441a78cff123fd6b37cf496510ec2646043a27b132.png" title=" user clicks on bot&oacute;n de fecha del datepicker" width="0"/>
+                <img src="2f1f473b5be33b05b97457ab513fb4e488d547230cf575ab92f5b4d8240d23b7.png" title=" user clicks on bot&oacute;n de fecha del datepicker (completed)" width="0"/>
+                <img src="2f1f473b5be33b05b97457ab513fb4e488d547230cf575ab92f5b4d8240d23b7.png" title=" user clicks on bot&oacute;n hoy del datepicker" width="0"/>
+                <img src="65d55476e71f0277e73596b2b5648152a8e877f0c057ebed21d5f10c171c8efc.png" title=" user clicks on bot&oacute;n hoy del datepicker (completed)" width="0"/>
+                <img src="65d55476e71f0277e73596b2b5648152a8e877f0c057ebed21d5f10c171c8efc.png" title=" user clicks on campo de empleado" width="0"/>
+                <img src="d7a17c052d0eec5c726082bfcf23e2669a24e497fc970fa118a73a34177a6b8e.png" title=" user clicks on campo de empleado (completed)" width="0"/>
+                <img src="d7a17c052d0eec5c726082bfcf23e2669a24e497fc970fa118a73a34177a6b8e.png" title=" user enters 'Laura Callahan' into campo de cliente" width="0"/>
+                <img src="b9aabea17879b8811e0c84e2141c2aff7f6e94c1c796d67765842e8e00c8952f.png" title=" user enters 'Laura Callahan' into campo de cliente (completed)" width="0"/>
+                <img src="e22639e6e56c1903cff77345cbe805d2d7d77591beed51f84e0cb1aa69cc2c61.png" title=" user clicks on campo de empleado" width="0"/>
+                <img src="717adc808ef1d4e365a83b30051de339b806a9b8db6f2073899656bf1c21615c.png" title=" user clicks on campo de empleado (completed)" width="0"/>
+                <img src="717adc808ef1d4e365a83b30051de339b806a9b8db6f2073899656bf1c21615c.png" title=" User create order task (completed)" width="0"/>
+                <img src="717adc808ef1d4e365a83b30051de339b806a9b8db6f2073899656bf1c21615c.png" title=" And creates a new order with the following main information:
+| Customer | Alfreds Futterkiste |
+| Order Date | current |
+| Employee | Laura Callahan | (completed)" width="0"/>
+                <img src="834f61ce7639f3a25ef63558b52fd644a0857c8c36bc6110979c90954e246489.png" title=" And adds the following product to the order details:
+| Product | Chai |
+| Quantity | 10 |
+| Price | 18 |" width="0"/>
+                <img src="834f61ce7639f3a25ef63558b52fd644a0857c8c36bc6110979c90954e246489.png" title=" User add product to order task" width="0"/>
+                <img src="834f61ce7639f3a25ef63558b52fd644a0857c8c36bc6110979c90954e246489.png" title=" user clicks on bot&oacute;n de nuevo detalle de pedido" width="0"/>
+                <img src="834f61ce7639f3a25ef63558b52fd644a0857c8c36bc6110979c90954e246489.png" title=" user clicks on campo de producto" width="0"/>
+                <img src="5fcdc79574bf7841ca2005ca7b1ea0a87686eb456f8cfa681c1fbf546b2c0728.png" title=" user clicks on campo de producto (completed)" width="0"/>
+                <img src="5fcdc79574bf7841ca2005ca7b1ea0a87686eb456f8cfa681c1fbf546b2c0728.png" title=" user enters 'Chai' into campo de producto" width="0"/>
+                <img src="f91f41f1d8e2dc146f90820fde58286fe3d672fcde466837134bba7fd1838641.png" title=" user enters 'Chai' into campo de producto (completed)" width="0"/>
+                <img src="94c16c269d911a6686176908c821cdb16c858f411d6ba042f3fadbfbec2583ae.png" title=" user clicks on campo de producto" width="0"/>
+                <img src="9ef12d73f44ae04b61bb81fc3c7d10e9c8c662d5e02377eb25f5e1c3103279dd.png" title=" user clicks on campo de producto (completed)" width="0"/>
+                <img src="9ef12d73f44ae04b61bb81fc3c7d10e9c8c662d5e02377eb25f5e1c3103279dd.png" title=" user enters '10' into Campo de precio unitario del producto" width="0"/>
+                <img src="43dc1aeb02f5e4822fca1517bf12f922b829c1f56a1b35674acbe4207fe46ad0.png" title=" user enters '10' into Campo de precio unitario del producto (completed)" width="0"/>
+                <img src="43dc1aeb02f5e4822fca1517bf12f922b829c1f56a1b35674acbe4207fe46ad0.png" title=" user enters '18' into Campo de precio unitario del producto" width="0"/>
+                <img src="8d5e3690fef9e083a51c0d79b1b8d4e17578706698453186b527c80e7b7c822f.png" title=" user enters '18' into Campo de precio unitario del producto (completed)" width="0"/>
+                <img src="8d5e3690fef9e083a51c0d79b1b8d4e17578706698453186b527c80e7b7c822f.png" title=" user clicks on bot&oacute;n de guardar detalle de pedido" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" user clicks on bot&oacute;n de guardar detalle de pedido (completed)" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" User add product to order task (completed)" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" And adds the following product to the order details:
+| Product | Chai |
+| Quantity | 10 |
+| Price | 18 | (completed)" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" And saves the order record" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" User save order task" width="0"/>
+                <img src="e25fed689e873dc6c7ebe55524236aa1e6b621f00761ca09ae23d5e4b474169b.png" title=" user clicks on bot&oacute;n de guardar detalle de pedido" width="0"/>
+                <img src="f9924903ee32140e4b5c6385466bdc7ed5664ca35fb9311fd07378d5cf37fc1b.png" title=" Then the system shall display that the order was successfully created" width="0"/>
+                <img src="60b9d60067018eb2185cdbacd9bb0ebdae3ffa9e94685d395a3ce9f3af6d793d.png" title=" Then order validation" width="0"/>
+
+                <img src="60b9d60067018eb2185cdbacd9bb0ebdae3ffa9e94685d395a3ce9f3af6d793d.png" title=" Then the system shall display that the order was successfully created (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.0.12</span>
+</div>
+</body>
+</html>

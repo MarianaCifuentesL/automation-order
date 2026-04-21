@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="92b1cca48829b6cab0dc08477b48ef9ae663305d26e2de65aa58c7a533395680.html">Authentication In Serenity Demo</a></span>
+                > <span class="truncate-60"><a
+                    href="c6e01c6c0a0a00140b68a025e42c4de3a065d3a373d25773f5a128f2572971fe.html">Login with case "<case>" </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 17-04-2026 07:17</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Authentication In Serenity Demo </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6c5512236937b92cd7a296b24edb966c2bd94be46b8910f8b129a42d6150eb25.html">1 To 10 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="0a17ca2a0834567933779c98ff258e9031f0bda4ed71d320acc9238e06e1511e.html">Enter
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Login with case ""
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">When the user sends the credentials<br><table class='embedded'><tbody><tr><td>&lt;username&gt;</td></tr><tr><td>&lt;password&gt;</td></tr></tbody></table><br>Then the user can see the message "&lt;message&gt;"</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" 1: Login with case &quot;successful&quot; ({case=successful, =, username=admin, password=serenity, message=Dashboard visible})" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" user opens the browser at https://demo.serenity.is/" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" When the user sends the credentials
+| admin |
+| serenity |" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User login task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User enter text" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" User enter text (completed)" width="0"/>
+                <img src="99ad938f1ac05012f69c3504cb2c27197bfe2b8fec29036072f418a8e42386c4.png" title=" User enter text" width="0"/>
+                <img src="0923e472c35531618dd105178d42893b8465e53bb78471ba4e65ced60226615a.png" title=" User enter text (completed)" width="0"/>
+                <img src="0923e472c35531618dd105178d42893b8465e53bb78471ba4e65ced60226615a.png" title=" User click on" width="0"/>
+                <img src="a4c590bf77a6b82fb96cb3dc2ca5b2e3a10157e9ed46c59c862a766f957eb7db.png" title=" User click on (completed)" width="0"/>
+                <img src="a4c590bf77a6b82fb96cb3dc2ca5b2e3a10157e9ed46c59c862a766f957eb7db.png" title=" User login task (completed)" width="0"/>
+                <img src="b7e874d6fdf1669d87ac44e951312757e186ffad19e8d9955dc0bcb5667259ea.png" title=" When the user sends the credentials
+| admin |
+| serenity | (completed)" width="0"/>
+                <img src="b7e874d6fdf1669d87ac44e951312757e186ffad19e8d9955dc0bcb5667259ea.png" title=" Then the user can see the message &quot;Dashboard visible&quot;" width="0"/>
+                <img src="b7e874d6fdf1669d87ac44e951312757e186ffad19e8d9955dc0bcb5667259ea.png" title=" Then dashboard visible should be Predicates.equalTo(true)" width="0"/>
+                <img src="b7e874d6fdf1669d87ac44e951312757e186ffad19e8d9955dc0bcb5667259ea.png" title=" 1: Login with case &quot;successful&quot; ({case=successful, =, username=admin, password=serenity, message=Dashboard visible}) (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" 2: Login with case &quot;invalid username&quot; ({case=invalid username, =, username=wrong_user, password=serenity, message=Alert})" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" user opens the browser at https://demo.serenity.is/" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" When the user sends the credentials
+| wrong_user |
+| serenity |" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User login task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User enter text" width="0"/>
+                <img src="39ad7526146175ba157069dab2ee2f93ff459b7b08eb7a747423fdeb54d1a450.png" title=" User enter text (completed)" width="0"/>
+                <img src="39ad7526146175ba157069dab2ee2f93ff459b7b08eb7a747423fdeb54d1a450.png" title=" User enter text" width="0"/>
+                <img src="3241cbeff7cb33c796ba1a467d32b10fac82f6807f696ce280feeeab99d0bab3.png" title=" User enter text (completed)" width="0"/>
+                <img src="3241cbeff7cb33c796ba1a467d32b10fac82f6807f696ce280feeeab99d0bab3.png" title=" User click on" width="0"/>
+                <img src="f39f875386369bc639f30b31b0d9ae29d6584ad76c0f5200524d482261f40022.png" title=" User click on (completed)" width="0"/>
+                <img src="f39f875386369bc639f30b31b0d9ae29d6584ad76c0f5200524d482261f40022.png" title=" User login task (completed)" width="0"/>
+                <img src="f39f875386369bc639f30b31b0d9ae29d6584ad76c0f5200524d482261f40022.png" title=" When the user sends the credentials
+| wrong_user |
+| serenity | (completed)" width="0"/>
+                <img src="aefeb5bff17921c9cb2c703c09edd12b16e7a1ff75af7819fcfdbb8342d2f9de.png" title=" Then the user can see the message &quot;Alert&quot;" width="0"/>
+                <img src="aefeb5bff17921c9cb2c703c09edd12b16e7a1ff75af7819fcfdbb8342d2f9de.png" title=" Then error alert visible should be Predicates.equalTo(true)" width="0"/>
+                <img src="c888011d58ed39f64a2c3a93a8379d3ce482c2b57dda294826f70209f081b082.png" title=" Then error alert visible should be Predicates.equalTo(true) (completed)" width="0"/>
+                <img src="c888011d58ed39f64a2c3a93a8379d3ce482c2b57dda294826f70209f081b082.png" title=" Then the user can see the message &quot;Alert&quot; (completed)" width="0"/>
+                <img src="c888011d58ed39f64a2c3a93a8379d3ce482c2b57dda294826f70209f081b082.png" title=" 2: Login with case &quot;invalid username&quot; ({case=invalid username, =, username=wrong_user, password=serenity, message=Alert}) (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" 3: Login with case &quot;invalid password&quot; ({case=invalid password, =, username=admin, password=wrong_pass, message=Alert})" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" user opens the browser at https://demo.serenity.is/" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User open browser task (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" Given the user opens the browser (completed)" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" When the user sends the credentials
+| admin |
+| wrong_pass |" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User login task" width="0"/>
+                <img src="6bf94298e6bd817dbd4765579e7185dcae7564159c125da736ce66f193e89a6b.png" title=" User enter text" width="0"/>
+                <img src="2ad51c1b733e719b4f5d6603b5f6cdddceb15b583fbf1f037799d726222a1437.png" title=" User enter text (completed)" width="0"/>
+                <img src="2ad51c1b733e719b4f5d6603b5f6cdddceb15b583fbf1f037799d726222a1437.png" title=" User enter text" width="0"/>
+                <img src="e3aecd31ccace772f55419de6d8fcdc8a42ea4f0c11933aa4e42b6c2d00321ab.png" title=" User enter text (completed)" width="0"/>
+                <img src="e3aecd31ccace772f55419de6d8fcdc8a42ea4f0c11933aa4e42b6c2d00321ab.png" title=" User click on" width="0"/>
+                <img src="5c661cd3fdb7dfa629d419984d4c98b2df3df953c80cda89d9f3bec8f973b52d.png" title=" User click on (completed)" width="0"/>
+                <img src="5c661cd3fdb7dfa629d419984d4c98b2df3df953c80cda89d9f3bec8f973b52d.png" title=" User login task (completed)" width="0"/>
+                <img src="5c661cd3fdb7dfa629d419984d4c98b2df3df953c80cda89d9f3bec8f973b52d.png" title=" When the user sends the credentials
+| admin |
+| wrong_pass | (completed)" width="0"/>
+                <img src="5c661cd3fdb7dfa629d419984d4c98b2df3df953c80cda89d9f3bec8f973b52d.png" title=" Then the user can see the message &quot;Alert&quot;" width="0"/>
+                <img src="5c661cd3fdb7dfa629d419984d4c98b2df3df953c80cda89d9f3bec8f973b52d.png" title=" Then error alert visible should be Predicates.equalTo(true)" width="0"/>
+                <img src="a364b8db854531e9c682fc73c493c2e5e85b498b4acabf91033cf3e82c4440af.png" title=" Then error alert visible should be Predicates.equalTo(true) (completed)" width="0"/>
+                <img src="a364b8db854531e9c682fc73c493c2e5e85b498b4acabf91033cf3e82c4440af.png" title=" Then the user can see the message &quot;Alert&quot; (completed)" width="0"/>
+
+                <img src="a364b8db854531e9c682fc73c493c2e5e85b498b4acabf91033cf3e82c4440af.png" title=" 3: Login with case "invalid password" ({case=invalid password, =, username=admin, password=wrong_pass, message=Alert}) (completed): <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.0.12</span>
+</div>
+</body>
+</html>

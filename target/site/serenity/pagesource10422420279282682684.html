@@ -1,0 +1,1456 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en-US" class="pro theme-azure-light full-height-page" data-bs-theme="light"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;<br/>
+  &lt;meta http-equiv="Content-Type" content="text/html;charset=utf-8"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"&gt;<br/>
+  &lt;meta name="username" content="admin"&gt;<br/>
+  &lt;meta name="ai-translation-enabled" content="true"&gt;<br/>
+  &lt;meta name="csp-nonce" content="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;<br/>
+  &lt;script type="importmap" nonce="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;<br/>
+{<br/>
+  "imports": {<br/>
+    "jspdf": "/Serenity.Assets/jspdf/jspdf-autotable.bundle.js?v=IPMbG9fGxVLuCVbtwm4LEw",<br/>
+    "jspdf-autotable": "/Serenity.Assets/jspdf/jspdf-autotable.bundle.js?v=IPMbG9fGxVLuCVbtwm4LEw",<br/>
+    "@serenity-is/tiptap": "/Serenity.Assets/tiptap/tiptap.bundle.js?v=MVlU88Gd6NlMEisTJ7FBIA"<br/>
+  }<br/>
+}<br/>
+&lt;/script&gt;<br/>
+  &lt;meta http-equiv="Content-Security-Policy" content="<br/>
+    base-uri 'self';<br/>
+    connect-src 'self' http: ws: wss: https://www.google.com/recaptcha/;<br/>
+    default-src 'self';<br/>
+    font-src 'self' https://fonts.gstatic.com;<br/>
+    frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/;<br/>
+    img-src data: https: 'self';<br/>
+    script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ 'nonce-Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E';<br/>
+    style-src 'self' 'nonce-Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E'; <br/>
+"&gt;<br/>
+  &lt;link rel="home" id="ApplicationPath" href="/"&gt;<br/>
+  &lt;link rel="icon" type="image/x-icon" href="/favicon.ico"&gt;<br/>
+  &lt;link href="/DynJS.axd/CssBundle.Base.css?v=oKfnACujBDs_6O1cCPJkGw" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="application/json" id="ScriptCulture"&gt;{"DateOrder":"mdy","DateFormat":"MM/dd/yyyy","DateSeparator":"/","DateTimeFormat":"MM/dd/yyyy HH:mm:ss","DecimalSeparator":".","GroupSeparator":","}&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/LocalText.Site.en-US.Public.js?v=DIxwNeTW1xHmsZX3aexeSg" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Bundle.Base.js?v=sImgYv6R4xBr1c92lwQ_DA" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script type="module" src="/esm/Modules/Common/ScriptInit.js?v=AgjKoelIif2NAou6mICPjw" nonce="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" nonce="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;((typeof Serenity!=='undefined'&&Serenity.setScriptData)||(function(k,v){var s=Symbol.for('Serenity.scriptData');var g=globalThis[s];if(!g)g=globalThis[s]={};g[k]=v}))('Lookup.Administration.Language',new ((typeof Serenity!=='undefined'&&Serenity.Lookup)||(class Lookup{constructor(o,a){o&&Object.assign(this,o);a&&this.update(a)}update(a){var f=this.idField,v;this.itemById={};this.items=a||[];this.items.forEach(r=&gt;{if((v=r[f])!=null)this.itemById[v] = r})}}))({"idField":"LanguageId","textField":"LanguageName"},[{"LanguageId":"ar","LanguageName":"Arabic"},{"LanguageId":"bn","LanguageName":"Bangla"},{"LanguageId":"zh-CN","LanguageName":"Chinese (Simplified)"},{"LanguageId":"zh-TW","LanguageName":"Chinese (Traditional)"},{"LanguageId":"cs","LanguageName":"Czech"},{"LanguageId":"nl","LanguageName":"Dutch"},{"LanguageId":"en","LanguageName":"English"},{"LanguageId":"fa","LanguageName":"Farsi"},{"LanguageId":"fr","LanguageName":"French"},{"LanguageId":"de","LanguageName":"German"},{"LanguageId":"hi","LanguageName":"Hindi"},{"LanguageId":"id","LanguageName":"Indonesian"},{"LanguageId":"it","LanguageName":"Italian"},{"LanguageId":"ja","LanguageName":"Japanese"},{"LanguageId":"ko","LanguageName":"Korean"},{"LanguageId":"pl","LanguageName":"Polish"},{"LanguageId":"pt","LanguageName":"Portuguese"},{"LanguageId":"pt-BR","LanguageName":"Portuguese (Brazil)"},{"LanguageId":"ro","LanguageName":"Romanian"},{"LanguageId":"ru","LanguageName":"Russian"},{"LanguageId":"es","LanguageName":"Spanish"},{"LanguageId":"sv","LanguageName":"Swedish"},{"LanguageId":"tr","LanguageName":"Turkish"},{"LanguageId":"vi-VN","LanguageName":"Vietnamese (Vietnam)"}]));&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" nonce="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;((typeof Serenity!=='undefined'&&Serenity.setScriptData)||(function(k,v){var s=Symbol.for('Serenity.scriptData');var g=globalThis[s];if(!g)g=globalThis[s]={};g[k]=v}))('RemoteData.UserData',{"Username":"admin","DisplayName":"admin","IsAdmin":true,"Permissions":{"WorkLog:Lookups":true,"WorkLog:Commercial":true,"WorkLog:Customer":true,"WorkLog:Management":true,"WorkLog:Employee":true,"WorkLog:Pricing":true,"Administration:EmailQueue":true,"Administration:DataAuditLog":true,"Meeting:General":true,"Meeting:Management":true,"Meeting:BusinessUnits:Management":true,"Meeting:Contacts:Management":true,"EmailClient:Mailbox":true,"Administration:DataExplorer":true,"Northwind:General":true,"Northwind:Customer:Delete":true,"Northwind:Customer:Modify":true,"Northwind:Customer:View":true,"Administration:ExceptionLog":true,"Administration:Security":true,"Administration:Translation":true,"Role:Administrators":true,"Role:Developers":true,"Role:Employees":true,"Role:NorthwindUsers":true,"Role:WorkLogCustomers":true,"Role:WorkLogManagers":true}});&lt;/script&gt;<br/>
+  &lt;script type="application/json" id="RegisteredScripts"&gt;{"RemoteData.LocalText":"--212154991","Lookup.Northwind.Supplier":"NFOoq3kV6wxHb3mUF6QIeA","Form.WorkLog.Employee":"639122684394525756","ColumnsBundle":"639122684394525761","Columns.Serenity.Pro.Meeting.Columns.MeetingAttendeeColumns":"639122684394525771","Form.AdvancedSamples.OrderWizard":"639122684394525778","Form.AdvancedSamples.GoogleMapsForm":"639122684394525783","FormBundle":"639122684394525788","RemoteData.Administration.ImplicitPermissions":"639122684394525805","Columns.Northwind.Product":"639122684394525810","Form.Northwind.Territory":"639122684394525814","LocalText.Site.tr-TR.Public":"ogqDPZVhTK-0I6pEiQxCEg","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaColumns":"639122684394525831","Form.AdvancedSamples.DragDropSample":"639122684394525837","Form.Serenity.Pro.EmailClient.EmailCompose":"639122684394525845","Columns.Serenity.Pro.Meeting.Columns.MeetingLocationColumns":"639122684394525850","Columns.Serenity.Pro.EmailQueue.EmailQueueColumns":"639122684394525858","Columns.WorkLog.EmployeePricing":"639122684394525863","Lookup.Administration.Language":"5pG05svwfLI86E2MvHVGnw","Form.Northwind.OrderDetail":"639122684394525880","Columns.WorkLog.Invoice":"639122684394525884","RemoteData.Administration.PermissionKeys":"639122684394525889","Lookup.Distinct.Pro.DataAuditLog.DataAuditLog.Tablename":"639122684394525900","Columns.Serenity.Pro.DataAuditLog.DataAuditLogColumns":"639122684394525904","Form.Administration.Role":"639122684394525910","Lookup.Northwind.CustomerCountry":"UJyoErNdA_QoYJF2HbsX_Q","Lookup.Pro.Meeting.Contact":"639122684394525939","Columns.WorkLog.Customer":"639122684394525944","Form.Northwind.Customer":"639122684394525946","CssBundle.Base":"oKfnACujBDs_6O1cCPJkGw","Lookup.Pro.Meeting.MeetingLocation":"639122684394525959","Lookup.Northwind.Employee":"zafBgimeDQjKfgVbkJBKyQ","Lookup.Distinct.WorkLog.WorkLog.Year":"639122684394525982","Form.Northwind.Product":"639122684394525988","Form.Administration.Language":"639122684394525990","Form.Administration.User":"639122684394525995","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaForm":"639122684394525999","Form.Membership.Login":"639122684394526003","Form.Serenity.Pro.Meeting.Forms.MeetingLocationForm":"639122684394526017","Lookup.Northwind.Territory":"639122684394526025","Columns.WorkLog.WorkLog":"639122684394526030","Columns.WorkLog.Project":"639122684394526032","Form.BasicSamples.LookupFilterByMultiple":"639122684394526035","Lookup.WorkLog.Customer":"639122684394526040","Lookup.WorkLog.Project":"639122684394526049","Form.Serenity.Extensions.ResetPasswordRequest":"639122684394526053","Columns.Northwind.Territory":"639122684394526056","Lookup.Pro.Meeting.MeetingAgendaType":"639122684394526062","Lookup.Northwind.OrderShipCity":"ZgoEMClqIz0KmrzEkGDa2A","Lookup.Pro.Meeting.MeetingType":"639122684394526087","Form.Serenity.Pro.Meeting.Forms.BusinessUnitForm":"639122684394526090","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionRelevantColumns":"639122684394526096","Form.BasicSamples.FilteredLookupInDetail":"639122684394526098","Form.Membership.SignUp":"639122684394526101","Form.WorkLog.Invoice":"639122684394526103","Lookup.Administration.Role":"639122684394526109","Form.Serenity.Pro.DataAuditLog.DataAuditLogForm":"639122684394526114","Columns.AdvancedSamples.CustomerGrossSales":"639122684394526119","Lookup.Northwind.Region":"639122684394526132","Columns.Northwind.Category":"639122684394526135","Form.AdvancedSamples.InlineButtons":"639122684394526141","Form.Northwind.Region":"639122684394526143","Form.AdvancedSamples.EnumFlagsForm":"639122684394526147","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaTypeForm":"639122684394526158","Columns.Serenity.Pro.Meeting.Columns.MeetingTypeColumns":"639122684394526168","Form.Serenity.Pro.EmailQueue.EmailQueueForm":"639122684394526183","Form.Northwind.Category":"639122684394526186","Form.Serenity.Pro.Meeting.Forms.ContactForm":"639122684394526188","Columns.Northwind.Order":"639122684394526191","Columns.Administration.Language":"639122684394526195","Form.Northwind.Shipper":"639122684394526201","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaRelevantColumns":"639122684394526205","Columns.Serenity.Pro.Meeting.Columns.BusinessUnitColumns":"639122684394526211","Form.Serenity.Pro.Meeting.Forms.MeetingAttendeeForm":"639122684394526215","Lookup.Northwind.Category":"RZ2ytMXA3Wwk7Hqd-J9WBQ","Lookup.Northwind.Customer":"PkdFpxJ8XQWPnuqzxp0D1A","Form.Northwind.Order":"639122684394526255","Form.Serenity.Extensions.ForgotPasswordRequest":"639122684394526259","Columns.Serenity.Pro.Meeting.Columns.MeetingDecisionColumns":"639122684394526263","Form.Serenity.Pro.Meeting.Forms.MeetingAgendaRelevantForm":"639122684394526266","Columns.WorkLog.Employee":"639122684394526269","Form.Serenity.Extensions.ChangePasswordRequest":"639122684394526272","Lookup.WorkLog.Invoice":"639122684394526278","Columns.Serenity.Pro.Meeting.MeetingColumns":"639122684394526281","Form.BasicSamples.HarcodedValues":"639122684394526287","Lookup.Pro.Meeting.BusinessUnit":"639122684394526295","Columns.WorkLog.Currency":"639122684394526300","Form.WorkLog.Project":"639122684394526306","Form.BasicSamples.ChangingLookupText":"639122684394526310","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionRelevantForm":"639122684394526315","Columns.Administration.User":"639122684394526334","Bundle.Base":"sImgYv6R4xBr1c92lwQ_DA","Form.Serenity.Pro.EmailClient.EmailLogin":"639122684394526343","Columns.Northwind.Customer":"639122684394526347","Columns.Northwind.OrderDetail":"639122684394526350","Form.WorkLog.Customer":"639122684394526352","Lookup.Northwind.Shipper":"eeUwrXI5jbZ-SRGv43iPbg","RemoteData.PasswordStrengthRules":"639122684394526382","Columns.AdvancedSamples.DragDropSample":"639122684394526388","Form.AdvancedSamples.LeafletForm":"639122684394526391","Form.WorkLog.Currency":"639122684394526395","Form.AdvancedSamples.EditorAddons":"639122684394526398","Form.Serenity.Pro.Meeting.MeetingForm":"639122684394526400","Form.BasicSamples.StaticTextBlock":"639122684394526403","Columns.Serenity.Pro.Meeting.Columns.ContactColumns":"639122684394526407","Columns.Northwind.Shipper":"639122684394526411","Columns.Northwind.SalesByCategory":"639122684394526416","Columns.Northwind.Region":"639122684394526422","LocalText.Site.en-US.Public":"DIxwNeTW1xHmsZX3aexeSg","Lookup.Northwind.Product":"2L1p_Vj6YPwFkIYHUOknLg","RemoteData.UserData":"639122684394526446","Lookup.Northwind.OrderShipCountry":"69CEAyGBr6fI2XXbsFlO7A","Lookup.WorkLog.Tasks":"639122684394526470","LocalText.Site.es-ES.Public":"6d0TQKXgJz-oo8_G-XMU9Q","CssBundle.Base.rtl":"639122684394526485","Columns.BasicSamples.InlineImageInGrid":"639122684394526490","Columns.Administration.Role":"639122684394526497","Form.AdvancedSamples.PickerOrder":"639122684394526501","Columns.Northwind.Supplier":"639122684394526503","Lookup.Northwind.SupplierCountry":"639122684394526511","Form.AdvancedSamples.ProductExcelImport":"639122684394526525","Form.Serenity.Pro.Meeting.Forms.MeetingTypeForm":"639122684394526530","Form.Northwind.Supplier":"639122684394526532","Lookup.Administration.User":"639122684394526540","Form.WorkLog.EmployeePricing":"639122684394526542","Lookup.WorkLog.Employee":"639122684394526549","Lookup.Northwind.CustomerCity":"4hTqZ_bugfv-l2K0p0P86A","Form.AdvancedSamples.MultiDatesPicker":"639122684394526566","ColumnAndFormBundle":"SOZCvr1CE6CAEz4kVk_Xbg","Form.WorkLog.WorkLog":"639122684394526579","LocalText.Site.zh-CN.Public":"639122684394526584","Form.Membership.Elevate":"639122684394526587","Lookup.Distinct.Pro.DataAuditLog.DataAuditLog.FieldName":"639122684394526594","Form.BasicSamples.PopulateLinkedData":"639122684394526597","Columns.Serenity.Pro.Meeting.Columns.MeetingAgendaTypeColumns":"639122684394526601","Lookup.Distinct.WorkLog.WorkLog.Month":"639122684394526610","Form.Serenity.Pro.Meeting.Forms.MeetingDecisionForm":"639122684394526613","Lookup.WorkLog.Currency":"639122684394526621"}&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.Customer.js?v=PkdFpxJ8XQWPnuqzxp0D1A" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.CustomerCountry.js?v=UJyoErNdA_QoYJF2HbsX_Q" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.CustomerCity.js?v=4hTqZ_bugfv-l2K0p0P86A" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.Employee.js?v=zafBgimeDQjKfgVbkJBKyQ" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.OrderShipCountry.js?v=69CEAyGBr6fI2XXbsFlO7A" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.OrderShipCity.js?v=ZgoEMClqIz0KmrzEkGDa2A" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.Product.js?v=2L1p_Vj6YPwFkIYHUOknLg" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/DynJS.axd/Lookup.Northwind.Shipper.js?v=eeUwrXI5jbZ-SRGv43iPbg" type="text/javascript"&gt;&lt;/script&gt;<br/>
+  &lt;title&gt;Orders - StartSharp&lt;/title&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body id="s-Page" class=" " data-fhrouteinit="true"&gt;<br/>
+  &lt;div id="PageBackground"&gt;&lt;/div&gt;<br/>
+  &lt;aside class="s-sidebar" id="s-sidebar"&gt;<br/>
+   &lt;div class="s-sidebar-band"&gt;<br/>
+    &lt;ul class="s-sidebar-band-groups"&gt;<br/>
+     &lt;li class="active"&gt;&lt;a class="s-sidebar-band-link" href="#s_sidebar_group1" title="StartSharp"&gt; &lt;i class="s-sidebar-band-icon fa fa-home"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+     &lt;li class=""&gt;&lt;a class="s-sidebar-band-link" href="#s_sidebar_group2" title="Administration"&gt; &lt;i class="s-sidebar-band-icon fa fa-tools"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+    &lt;div class="s-sidebar-band-middle"&gt;<br/>
+     &lt;div class="s-sidebar-band-branding"&gt;&lt;img class="s-site-logo-img s-sidebar-band-logo"&gt; &lt;span class="s-sidebar-band-title"&gt;Start&lt;/span&gt;&lt;span class="s-sidebar-band-title2"&gt;Sharp&lt;/span&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;ul class="s-sidebar-band-actions"&gt;<br/>
+     &lt;li&gt;<br/>
+      &lt;div class="dropdown dropend"&gt;&lt;a href="javascript:;" class="s-sidebar-band-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language"&gt; &lt;i class="s-sidebar-band-icon fa fa-language"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+       &lt;ul class="dropdown-menu s-language-selection-menu"&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ar" href="javascript:;"&gt;Arabic&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="bn" href="javascript:;"&gt;Bangla&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-CN" href="javascript:;"&gt;Chinese (Simplified)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-TW" href="javascript:;"&gt;Chinese (Traditional)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="cs" href="javascript:;"&gt;Czech&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="nl" href="javascript:;"&gt;Dutch&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="en" href="javascript:;"&gt;English&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="fa" href="javascript:;"&gt;Farsi&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="fr" href="javascript:;"&gt;French&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="de" href="javascript:;"&gt;German&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="hi" href="javascript:;"&gt;Hindi&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="id" href="javascript:;"&gt;Indonesian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="it" href="javascript:;"&gt;Italian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ja" href="javascript:;"&gt;Japanese&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ko" href="javascript:;"&gt;Korean&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pl" href="javascript:;"&gt;Polish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pt" href="javascript:;"&gt;Portuguese&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="pt-BR" href="javascript:;"&gt;Portuguese (Brazil)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ro" href="javascript:;"&gt;Romanian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="ru" href="javascript:;"&gt;Russian&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="es" href="javascript:;"&gt;Spanish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="sv" href="javascript:;"&gt;Swedish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="tr" href="javascript:;"&gt;Turkish&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-language="vi-VN" href="javascript:;"&gt;Vietnamese (Vietnam)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;<br/>
+      &lt;/div&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;<br/>
+      &lt;div class="dropdown dropend"&gt;&lt;a href="javascript:;" class="s-sidebar-band-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme"&gt; &lt;i class="s-sidebar-band-icon fa fa-fill-drip"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+       &lt;ul class="dropdown-menu s-theme-selection-menu"&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="azure-light" href="javascript:;"&gt;Azure (Light)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;"&gt;Cosmos (Dark)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;li&gt;&lt;a class="dropdown-item" data-theme="glassy-light" href="javascript:;"&gt;Glassy (Light)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;/ul&gt;<br/>
+      &lt;/div&gt;&lt;/li&gt;<br/>
+     &lt;li&gt;<br/>
+      &lt;div class="dropdown dropend"&gt;&lt;a href="javascript:;" class="s-sidebar-band-link s-user-profile-link" data-bs-toggle="dropdown" title="admin"&gt; &lt;i class="s-sidebar-band-icon fa fa-user"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+       &lt;div class="dropdown-menu dropdown-menu-md s-user-profile-menu"&gt;<br/>
+        &lt;div class="s-user-card p-1 mb-2 text-center border-bottom"&gt;<br/>
+         &lt;h2 class="s-user-avatar fs-1 mb-0"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/h2&gt;<br/>
+         &lt;p class="s-user-info fs-6 mb-1"&gt;admin&lt;/p&gt;<br/>
+        &lt;/div&gt;&lt;a class="dropdown-item" href="/Account/ChangePassword"&gt; &lt;em class="icon fa fa-key"&gt;&lt;/em&gt;&lt;span&gt; Change Password&lt;/span&gt; &lt;/a&gt; &lt;!--#if (TwoFactorAuthenticator)--&gt; &lt;a class="dropdown-item" href="/2FA/UserSettings"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt; 2FA Settings&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;!--#if (OpenIdClient)--&gt; &lt;a class="dropdown-item" href="/Account/ExternalLogins"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt; External Logins&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;a class="dropdown-item" href="/Account/Signout"&gt; &lt;em class="icon fa fa-sign-out-alt"&gt;&lt;/em&gt;&lt;span&gt; Logout&lt;/span&gt; &lt;/a&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;&lt;/li&gt;<br/>
+     &lt;li class="s-sidebar-pane-toggle"&gt;&lt;a href="javascript:;" class="s-sidebar-band-link s-sidebar-pane-toggle-link" title="toggle sidebar"&gt; &lt;i class="s-sidebar-band-icon fa fa-angle-double-left"&gt;&lt;/i&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+    &lt;/ul&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="s-sidebar-pane"&gt;<br/>
+    &lt;div id="s-sidebar-search" class="s-sidebar-search m-3"&gt;&lt;i class="fa fa-search fa-flip-horizontal s-sidebar-search-icon"&gt;&lt;/i&gt; &lt;input id="s-sidebar-search-input" type="text" class="w-100 s-sidebar-search-input" placeholder="search..."&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="s-sidebar-groups"&gt;<br/>
+     &lt;div class="s-sidebar-group active" id="s_sidebar_group1"&gt;<br/>
+      &lt;h5 class="s-sidebar-group-title"&gt;StartSharp&lt;/h5&gt;<br/>
+      &lt;ul class="s-sidebar-menu" id="s_sidebar_menu1"&gt;<br/>
+       &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/"&gt; &lt;i class="s-sidebar-icon fa fa-tachometer"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dashboard&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li class="s-sidebar-item s-sidebar-section active has-children"&gt;&lt;h6 class="s-sidebar-section-title"&gt;Demo Modules&lt;/h6&gt;<br/>
+        &lt;ul id="nav_menu1_2" class="s-sidebar-section-menu"&gt;<br/>
+         &lt;li class="s-sidebar-item active has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_1" data-bs-toggle="collapse" aria-expanded="true"&gt; &lt;i class="s-sidebar-icon fa fa-anchor"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Northwind&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_2_1" class="s-sidebar-menu collapse show" data-bs-parent="#nav_menu1_2"&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Customer"&gt; &lt;i class="s-sidebar-icon fa fa-credit-card"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Customers&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item active"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Order"&gt; &lt;i class="s-sidebar-icon fa fa-shopping-cart"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Orders&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product"&gt; &lt;i class="s-sidebar-icon fa fa-cube"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Products&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Supplier"&gt; &lt;i class="s-sidebar-icon fa fa-truck"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Suppliers&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Shipper"&gt; &lt;i class="s-sidebar-icon fa fa-ship"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Shippers&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Category"&gt; &lt;i class="s-sidebar-icon fa fa-folder-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Categories&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Region"&gt; &lt;i class="s-sidebar-icon fa fa-map-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Regions&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Territory"&gt; &lt;i class="s-sidebar-icon fa fa-puzzle-piece"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Territories&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Reports"&gt; &lt;i class="s-sidebar-icon fa fa-files-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Reports&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-magic"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Basic Samples&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_2_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dialogs&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_2_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/ChartInDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Chart in a Dialog&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/CloneableEntityDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cloneable Entity Dialog&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/DefaultValuesInNewDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Default Values in New Dialog&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/DialogBoxes"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dialog Boxes&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/EntityDialogAsPanel/11077"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Entity Dialog as Panel&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/GetInsertedRecordId"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Get Inserted Record ID&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/OtherFormInTab"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Other Form In Tab&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/OtherFormInTabOneBar"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Other Form, One Toolbar&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/PopulateLinkedData"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Populate Linked Data&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/ReadOnlyDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Read-Only Dialog&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/SerialAutoNumber"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Serial Auto Numbering&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_2_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editors&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_2_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/ChangingLookupText"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Changing Lookup Text&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/FilteredLookupInDetailDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Filtered Lookup in Detail.&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/LookupFilterByMultipleValues"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Lookup Filter by Multi Val.&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/SelectWithHardcodedValues"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Select with Hardcod.Vals.&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/StaticTextBlock"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Static Text Block&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_2_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grids&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/CustomLinksInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Custom Links In Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/EnablingRowSelection"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Enabling Row Selection&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/GroupingAndSummariesInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grouping and Sum. In Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/GridFilteredByCriteria"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grid Filtered by Criteria&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/InitialValuesForQuickFilters"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Initial Value for Quick Flt.&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/InlineActionButtons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Inline Action Buttons&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/InlineImageInGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Inline Image In Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/RemovingAddButton"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Removing Add Button&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/ViewWithoutID"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;View Without ID&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/BasicSamples/WrappedHeaders"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Wrapped Headers&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_2_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dynamic Navigation&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_2"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=1"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Beverages&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=2"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Condiments&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=3"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Confections&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=4"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Dairy Products&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=5"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grains/Cereals&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=6"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meat/Poultry&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=7"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Produce&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Northwind/Product?cat=8"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Seafood&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-star premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Advanced Samples&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt;<br/>
+           &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_3_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Forms&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt;<br/>
+             &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/EditorAddons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editor Addons&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/EntityGridDialog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Entity Grid Dialog&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/EnumFlagsEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Enum Flags Editor&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/GoogleMapsEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Google Maps Editor&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/InputWithInlineButtons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Input with Inline Buttons&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/LeafletEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Leaflet Editor&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/MultiDatesPicker"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Multi Dates Picker&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/OrderWizard"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Order Wizard&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ProductPicker"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Product Picker&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_3_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Grids&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ActionsDropdown"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Actions Dropdown&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/AutoColumnWidth"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Auto Column Width&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/CardView"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Card View&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/CustomizableSummaries"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Customizable Summaries&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/CancellableBulkAction"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Cancellable Bulk Action&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ConditionalFormatting"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Conditional Formatting&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/DragDropGrouping"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Drag &amp; Drop Grouping&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/DragDropInTreeGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Drag &amp; Drop in Tree Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ExcelStyleFilters"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Excel Style Filtering&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/InlineEditing"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Inline Editing&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/InlineGridEditor"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Inline Grid Editor&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/LongRunningAction"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Long Running Action&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ProductExcelImport"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Product Excel Import&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/QuickFilterCustomization"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Quick Filter Customization&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SplitMasterDetail"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Split Master Detail Grids&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/StoredProcedureGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Stored Procedure Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/TreeGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tree Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_3_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Misc&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_3_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/BootstrapFormList"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Classic Bootstrap Form&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/DataAuditLog"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Data Audit Log&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/DataExplorer"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Data Explorer&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/BasicInit"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;DataTables Basic Init&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ServerSide"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;DataTables Server Source&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/EmailClient/Mailbox"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Email Client (IMAP)&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/IdleTimeout"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Idle (Session) Timeout&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_3_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;SleekGrid&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_2_3_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2_3"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekHighFrequencyUpdates"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;High Frequency Updates&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekBasicGrid"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Basic Grid&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekFormatters"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Formatters&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/ES6Demo"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;ES6 Demo&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekEvents"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Events&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekEditing"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editing&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AdvancedSamples/SleekEditingWithUndo"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Editing with Undo&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_4" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-cubes"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Application Samples&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_2_4" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AppSamples/FileExplorer"&gt; &lt;i class="s-sidebar-icon fa fa-folder-open"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;File Explorer&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/AppSamples/Calendar"&gt; &lt;i class="s-sidebar-icon fa fa-calendar"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Calendar&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_2_5" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-code"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;UI Elements&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_2_5" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_2"&gt;<br/>
+           &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/UIElements/Components"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Components&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/UIElements/Icons"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Icons&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/UIElements/Tabs"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Tabs &amp; Accordion&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt;&lt;h6 class="s-sidebar-section-title"&gt;Pro Features&lt;/h6&gt;<br/>
+        &lt;ul id="nav_menu1_3" class="s-sidebar-section-menu"&gt;<br/>
+         &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_3_1" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-comments premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meeting&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_3_1" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3"&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/Meeting"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meetings&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/BusinessUnit"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Business Units&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/Contact"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Contacts&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/MeetingAgendaType"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Agenda Types&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/MeetingLocation"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meeting Locations&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Meeting/MeetingType"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Meeting Types&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item has-children hot"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_3_2" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon fa fa-hourglass-end premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Work Log&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+          &lt;ul id="nav_menu1_3_2" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3"&gt;<br/>
+           &lt;li class="s-sidebar-item hot"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/WorkLog"&gt; &lt;i class="s-sidebar-icon fa fa-clock-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Work Logs&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/Invoice"&gt; &lt;i class="s-sidebar-icon fa fa-file-text"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Invoices&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li class="s-sidebar-item has-children"&gt;&lt;a class="s-sidebar-link" href="#nav_menu1_3_2_3" data-bs-toggle="collapse"&gt; &lt;i class="s-sidebar-icon s-sidebar-noicon"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Setup&lt;/span&gt; &lt;em class="s-sidebar-menu-toggle fa fa-angle-right"&gt;&lt;/em&gt; &lt;/a&gt;<br/>
+            &lt;ul id="nav_menu1_3_2_3" class="s-sidebar-menu collapse" data-bs-parent="#nav_menu1_3_2"&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/Employee"&gt; &lt;i class="s-sidebar-icon fa fa-users"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Employees&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/Customer"&gt; &lt;i class="s-sidebar-icon fa fa-user"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Customers&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/Project"&gt; &lt;i class="s-sidebar-icon fa fa-book"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Projects&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/EmployeePricing"&gt; &lt;i class="s-sidebar-icon fa fa-envelope"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Pricing&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+             &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/WorkLog/Currency"&gt; &lt;i class="s-sidebar-icon fa fa-usd"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Currencies&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+            &lt;/ul&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="s-sidebar-group" id="s_sidebar_group2"&gt;<br/>
+      &lt;h5 class="s-sidebar-group-title"&gt;Administration&lt;/h5&gt;<br/>
+      &lt;ul class="s-sidebar-menu" id="s_sidebar_menu2"&gt;<br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt;&lt;h6 class="s-sidebar-section-title"&gt;General&lt;/h6&gt;<br/>
+        &lt;ul id="nav_menu2_1" class="s-sidebar-section-menu"&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/DataAuditLog"&gt; &lt;i class="s-sidebar-icon fa fa-history premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Data Audit Log&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/DataExplorer"&gt; &lt;i class="s-sidebar-icon fa fa-database premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Data Explorer&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/EmailQueue"&gt; &lt;i class="s-sidebar-icon fa fa-envelope-o premium-feature"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Email Queue&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Administration/ExceptionLog/" target="_blank"&gt; &lt;i class="s-sidebar-icon fa fa-ban"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Exception Log&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt;&lt;h6 class="s-sidebar-section-title"&gt;Localization&lt;/h6&gt;<br/>
+        &lt;ul id="nav_menu2_2" class="s-sidebar-section-menu"&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Administration/Language"&gt; &lt;i class="s-sidebar-icon fa fa-comments"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Languages&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Administration/Translation"&gt; &lt;i class="s-sidebar-icon fa fa-comment-o"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Translations&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li class="s-sidebar-item s-sidebar-section has-children"&gt;&lt;h6 class="s-sidebar-section-title"&gt;Security&lt;/h6&gt;<br/>
+        &lt;ul id="nav_menu2_3" class="s-sidebar-section-menu"&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Administration/Role"&gt; &lt;i class="s-sidebar-icon fa fa-lock"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;Roles&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li class="s-sidebar-item"&gt;&lt;a class="s-sidebar-link" href="/Administration/User"&gt; &lt;i class="s-sidebar-icon fa fa-users"&gt;&lt;/i&gt; &lt;span class="s-sidebar-link-text"&gt;User Management&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/aside&gt;<br/>
+  &lt;header class="navbar sticky-top s-mobile-header"&gt;&lt;button class="s-sidebar-toggler" type="button" id="s-sidebar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"&gt; &lt;i class="fa fa-bars"&gt;&lt;/i&gt; &lt;/button&gt;<br/>
+   &lt;div class="s-mobile-header-branding"&gt;&lt;img class="s-site-logo-img s-mobile-header-logo"&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;ul class="s-mobile-header-actions"&gt;<br/>
+    &lt;li&gt;<br/>
+     &lt;div class="dropdown"&gt;&lt;a href="javascript:;" class="s-mobile-header-link s-language-selection-link" data-bs-toggle="dropdown" title="switch language"&gt; &lt;i class="s-mobile-header-icon fa fa-language"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+      &lt;ul class="dropdown-menu dropdown-menu-end s-language-selection-menu"&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ar" href="javascript:;"&gt;Arabic&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="bn" href="javascript:;"&gt;Bangla&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-CN" href="javascript:;"&gt;Chinese (Simplified)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="zh-TW" href="javascript:;"&gt;Chinese (Traditional)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="cs" href="javascript:;"&gt;Czech&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="nl" href="javascript:;"&gt;Dutch&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="en" href="javascript:;"&gt;English&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="fa" href="javascript:;"&gt;Farsi&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="fr" href="javascript:;"&gt;French&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="de" href="javascript:;"&gt;German&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="hi" href="javascript:;"&gt;Hindi&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="id" href="javascript:;"&gt;Indonesian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="it" href="javascript:;"&gt;Italian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ja" href="javascript:;"&gt;Japanese&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ko" href="javascript:;"&gt;Korean&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pl" href="javascript:;"&gt;Polish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pt" href="javascript:;"&gt;Portuguese&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="pt-BR" href="javascript:;"&gt;Portuguese (Brazil)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ro" href="javascript:;"&gt;Romanian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="ru" href="javascript:;"&gt;Russian&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="es" href="javascript:;"&gt;Spanish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="sv" href="javascript:;"&gt;Swedish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="tr" href="javascript:;"&gt;Turkish&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-language="vi-VN" href="javascript:;"&gt;Vietnamese (Vietnam)&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;<br/>
+     &lt;div class="dropdown"&gt;&lt;a href="javascript:;" class="s-mobile-header-link s-theme-selection-link" data-bs-toggle="dropdown" title="switch theme"&gt; &lt;i class="s-mobile-header-icon fa fa-fill-drip"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+      &lt;ul class="dropdown-menu dropdown-menu-end s-theme-selection-menu"&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="azure-light" href="javascript:;"&gt;Azure (Light)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="cosmos-dark" href="javascript:;"&gt;Cosmos (Dark)&lt;/a&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;&lt;a class="dropdown-item" data-theme="glassy-light" href="javascript:;"&gt;Glassy (Light)&lt;/a&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;&lt;/li&gt;<br/>
+    &lt;li&gt;<br/>
+     &lt;div class="dropdown"&gt;&lt;a href="javascript:;" class="s-mobile-header-link s-user-profile-link" data-bs-toggle="dropdown" title="admin"&gt; &lt;i class="s-mobile-header-icon fa fa-user"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+      &lt;div class="dropdown-menu dropdown-menu-md dropdown-menu-end s-user-profile-menu"&gt;<br/>
+       &lt;div class="s-user-card p-1 mb-2 text-center border-bottom"&gt;<br/>
+        &lt;h2 class="s-user-avatar fs-1 mb-0"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt;&lt;/h2&gt;<br/>
+        &lt;p class="s-user-info fs-6 mb-1"&gt;admin&lt;/p&gt;<br/>
+       &lt;/div&gt;&lt;a class="dropdown-item" href="/Account/ChangePassword"&gt; &lt;em class="icon fa fa-key"&gt;&lt;/em&gt;&lt;span&gt; Change Password&lt;/span&gt; &lt;/a&gt; &lt;!--#if (TwoFactorAuthenticator)--&gt; &lt;a class="dropdown-item" href="/2FA/UserSettings"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt; 2FA Settings&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;!--#if (OpenIdClient)--&gt; &lt;a class="dropdown-item" href="/Account/ExternalLogins"&gt; &lt;em class="icon fa fa-link"&gt;&lt;/em&gt;&lt;span&gt; External Logins&lt;/span&gt; &lt;/a&gt; &lt;!--#endif--&gt; &lt;a class="dropdown-item" href="/Account/Signout"&gt; &lt;em class="icon fa fa-sign-out-alt"&gt;&lt;/em&gt;&lt;span&gt; Logout&lt;/span&gt; &lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;&lt;/li&gt;<br/>
+   &lt;/ul&gt;<br/>
+  &lt;/header&gt;<br/>
+  &lt;main class="s-main"&gt;<br/>
+   &lt;section class="content"&gt;<br/>
+    &lt;div id="GridDiv" class="s-Serenity-Demo-Northwind-OrderGrid s-Demo-Northwind-OrderGrid s-OrderGrid s-DataGrid require-layout s-Serenity-Pro-Extensions-AutoColumnWidthMixin s-Pro-Extensions-AutoColumnWidthMixin s-AutoColumnWidthMixin s-DraggableGroupingMixin s-CustomSummaryMixin s-HeaderFiltersMixin route-handler responsive-height" data-hiddenby="1776671656828"&gt;<br/>
+     &lt;div class="grid-title"&gt;<br/>
+      &lt;div class="title-text"&gt;<br/>
+       Orders<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="grid-toolbar s-Serenity-Toolbar s-Toolbar clearfix"&gt;<br/>
+      &lt;div class="s-QuickSearchBar"&gt;<br/>
+       &lt;span class="quick-search-icon"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;&lt;input type="text" class="s-Serenity-QuickSearchInput s-QuickSearchInput" title="enter the text to search for..." placeholder="search..." id="Serenity_Demo_Northwind_OrderGrid0_QuickSearchInput"&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="tool-group"&gt;<br/>
+       &lt;div class="tool-button add-button icon-tool-button" data-action="add"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;i class="fa fa-plus-circle text-green"&gt;&lt;/i&gt; New Order&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="tool-button refresh-button icon-tool-button no-text" title="Refresh" data-action="refresh"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;i class="fa fa-refresh text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="tool-button column-picker-button icon-tool-button no-text" title="Column Picker" data-action="column-picker"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;i class="fa fa-th-list text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="tool-button edit-filter-button icon-tool-button no-text" title="edit filter" data-action="edit-filter"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;i class="fa fa-filter"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="tool-group"&gt;<br/>
+       &lt;div class="tool-button export-xlsx-button icon-tool-button no-text" title="Excel"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;i class="fa fa-file-excel"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="tool-button export-pdf-button no-text" title="PDF"&gt;<br/>
+        &lt;span class="button-inner"&gt;&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+      &lt;div class="quick-filters-bar s-Serenity-QuickFilterBar s-QuickFilterBar clear"&gt;<br/>
+       &lt;div class="quick-filter-item" data-qffield="CustomerID"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Customer&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-Demo-Northwind-CustomerEditor s-Demo-Northwind-CustomerEditor s-CustomerEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_CustomerID" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-1"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen1" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen1_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-1" id="s2id_autogen1_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-1"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_CustomerID" placeholder=" " maxlength="40" class="s-Serenity-Demo-Northwind-CustomerEditor s-Demo-Northwind-CustomerEditor s-CustomerEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="OrderDate"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Order Date&lt;/span&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_OrderDate" placeholder=" " class="s-Serenity-DateEditor s-DateEditor flatpickr-input customValidate"&gt;&lt;button type="button" class="ui-datepicker-trigger"&gt;&lt;/button&gt;&lt;span class="range-separator"&gt;-&lt;/span&gt;&lt;input type="text" class="s-Serenity-DateEditor s-DateEditor flatpickr-input customValidate"&gt;&lt;button type="button" class="ui-datepicker-trigger"&gt;&lt;/button&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="EmployeeID"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Employee&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_EmployeeID" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-2"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen2" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen2_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-2"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_EmployeeID" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item" data-qffield="ShippingState"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Shipping State&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-EnumEditor s-EnumEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShippingState" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-3"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen3" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-3" id="s2id_autogen3" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen3_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-3" id="s2id_autogen3_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-3"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShippingState" placeholder=" " class="s-Serenity-EnumEditor s-EnumEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="ShipVia"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Ship Via&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-container-multi s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipVia" title=""&gt;<br/>
+         &lt;ul class="select2-choices"&gt;<br/>
+          &lt;li class="select2-search-field"&gt;&lt;label for="s2id_autogen4" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen4" tabindex="null" aria-activedescendant="undefined" placeholder="" style="width: 165px;"&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;<br/>
+         &lt;div class="select2-drop select2-drop-multi select2-display-none"&gt;<br/>
+          &lt;ul class="select2-results"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipVia" placeholder=" " maxlength="40" class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1"&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="ShipCountry"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Ship Country&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipCountry" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-5"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen5" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-5" id="s2id_autogen5" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen5_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-5" id="s2id_autogen5_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-5"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipCountry" placeholder=" " maxlength="15" class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="ShipCity"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Ship City&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipCity" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-6"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen6" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-6" id="s2id_autogen6" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen6_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-6" id="s2id_autogen6_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-6"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ShipCity" placeholder=" " maxlength="15" class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="quick-filter-item hidden-xs" data-qffield="ProductID"&gt;<br/>
+        &lt;span class="quick-filter-label"&gt;Contains Product in Details&lt;/span&gt;<br/>
+        &lt;div class="select2-container select2-with-searchbox s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ProductID" title=""&gt;<br/>
+         &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-7"&gt; &lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen7" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-7" id="s2id_autogen7" tabindex="null"&gt;<br/>
+         &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+          &lt;div class="select2-search"&gt;<br/>
+           &lt;label for="s2id_autogen7_search" class="select2-offscreen"&gt;&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-7" id="s2id_autogen7_search" placeholder=""&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;ul class="select2-results" role="listbox" id="select2-results-7"&gt;&lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderGrid0_QuickFilter_ProductID" placeholder=" " class="s-Serenity-LookupEditor s-LookupEditor select2-offscreen" tabindex="-1" title=""&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="s-Serenity-FilterDisplayBar s-FilterDisplayBar" hidden&gt;<br/>
+      &lt;div&gt;<br/>
+       &lt;a class="reset" title="clear filter" hidden&gt;&lt;/a&gt;&lt;a class="edit"&gt;edit filter&lt;/a&gt;<br/>
+       &lt;div class="current" hidden&gt;<br/>
+        &lt;span class="cap"&gt;Active Filter:&lt;/span&gt;&lt;a class="txt"&gt;[none]&lt;/a&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="grid-container slick-container ltr _sleekgrid_1_ sleek-vars" style="overflow: hidden; outline: 0px; position: relative; --sg-start-width: 382px; --sg-end-width: 0px; --sg-main-width: 617px; --sg-virtual-width: 1086px; --sg-row-height: 36px; --sg-cell-height: 36px; --sg-scrollbar-w: 10px; --sg-scrollbar-h: 10px; --l0: 0px; --r0: 281px; --l1: 100px; --r1: 240px; --l2: 141px; --r2: 0px; --l3: 0px; --r3: 969px; --l4: 117px; --r4: 793px; --l5: 293px; --r5: 676px; --l6: 410px; --r6: 559px; --l7: 527px; --r7: 383px; --l8: 703px; --r8: 250px; --l9: 836px; --r9: 117px; --l10: 969px; --r10: 0px; --sg-top-height: 0px; --sg-bottom-height: 0px; --sg-body-height: 125.703px; --sg-virtual-height: 3600px;"&gt;<br/>
+      &lt;div class="slick-focus-sink" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;div class="slick-grouping-panel" hidden&gt;<br/>
+       &lt;div class="slick-dropped-placeholder"&gt;<br/>
+        Drag a column header here to group by that column<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-group-expand-all" title="Expand All" hidden&gt;&lt;/div&gt;<br/>
+       &lt;div class="slick-group-collapse-all" title="Collapse All" hidden&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-start slick-header"&gt;<br/>
+       &lt;div class="sg-start slick-header-columns"&gt;<br/>
+        &lt;div class="slick-header-column frozen pinned-start slick-header-sortable slick-header-column-sorted" data-id="OrderID" data-c="0" id="_sleekgrid_1_OrderID" title="" style="width: 100px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Order ID&lt;/span&gt;&lt;span class="slick-sort-indicator slick-sort-indicator-desc"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="OrderID" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="OrderID" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column frozen pinned-start" data-id="PrintInvoice" data-c="1" id="_sleekgrid_1_PrintInvoice" title="" style="width: 41px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;&lt;/span&gt;&lt;span data-column-id="PrintInvoice" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column frozen pinned-start slick-header-sortable" data-id="CustomerCompanyName" data-c="2" id="_sleekgrid_1_CustomerCompanyName" title="" style="width: 240px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Customer&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="CustomerCompanyName" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="CustomerCompanyName" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-main slick-header"&gt;<br/>
+       &lt;div class="sg-main slick-header-columns"&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="OrderDate" data-c="3" id="_sleekgrid_1_OrderDate" title="" style="width: 117px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Order Date&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="OrderDate" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="OrderDate" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="EmployeeFullName" data-c="4" id="_sleekgrid_1_EmployeeFullName" title="" style="width: 176px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Employee&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="EmployeeFullName" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="EmployeeFullName" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="RequiredDate" data-c="5" id="_sleekgrid_1_RequiredDate" title="" style="width: 117px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Required Date&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="RequiredDate" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="RequiredDate" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="ShippedDate" data-c="6" id="_sleekgrid_1_ShippedDate" title="" style="width: 117px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Shipped Date&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="ShippedDate" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="ShippedDate" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="ShipViaCompanyName" data-c="7" id="_sleekgrid_1_ShipViaCompanyName" title="" style="width: 176px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Ship Via&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="ShipViaCompanyName" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="ShipViaCompanyName" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="ShipCountry" data-c="8" id="_sleekgrid_1_ShipCountry" title="" style="width: 133px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Ship Country&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="ShipCountry" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="ShipCountry" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="ShipCity" data-c="9" id="_sleekgrid_1_ShipCity" title="" style="width: 133px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Ship City&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="ShipCity" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="ShipCity" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-header-column slick-header-sortable" data-id="Freight" data-c="10" id="_sleekgrid_1_Freight" title="" style="width: 117px;"&gt;<br/>
+         &lt;span class="slick-column-name"&gt;Freight&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;&lt;span data-columnid="Freight" class="s-header-menu-button s-header-filter-button auto-hide no-drag" data-plugin="HeaderFilters"&gt;&lt;/span&gt;&lt;span data-column-id="Freight" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+         &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-end slick-header"&gt;<br/>
+       &lt;div class="sg-end slick-header-columns"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="slick-top-panel-container"&gt;<br/>
+       &lt;div class="slick-top-panel"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-start slick-headerrow"&gt;<br/>
+       &lt;div class="sg-start slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-main slick-headerrow"&gt;<br/>
+       &lt;div class="sg-main slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-end slick-headerrow"&gt;<br/>
+       &lt;div class="sg-end slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-top sg-start slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-top sg-start grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-top sg-main slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-top sg-main grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-top sg-end slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-top sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-body sg-start slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-body sg-start grid-canvas" tabindex="0"&gt;<br/>
+        &lt;div class="slick-row even" data-row="0" style="top: 0px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11077" data-item-type="Demo.Northwind.Order" data-item-id="11077"&gt;11077&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11077" data-item-type="Demo.Northwind.Order" data-item-id="11077"&gt;Rattlesnake Canyon Grocery&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="1" style="top: 36px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11076" data-item-type="Demo.Northwind.Order" data-item-id="11076"&gt;11076&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11076" data-item-type="Demo.Northwind.Order" data-item-id="11076"&gt;Bon app'&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="2" style="top: 72px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11075" data-item-type="Demo.Northwind.Order" data-item-id="11075"&gt;11075&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11075" data-item-type="Demo.Northwind.Order" data-item-id="11075"&gt;Richter Supermarkt&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="3" style="top: 108px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11074" data-item-type="Demo.Northwind.Order" data-item-id="11074"&gt;11074&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11074" data-item-type="Demo.Northwind.Order" data-item-id="11074"&gt;Simons bistro&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="4" style="top: 144px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11073" data-item-type="Demo.Northwind.Order" data-item-id="11073"&gt;11073&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11073" data-item-type="Demo.Northwind.Order" data-item-id="11073"&gt;Pericles Comidas clásicas&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="5" style="top: 180px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11072" data-item-type="Demo.Northwind.Order" data-item-id="11072"&gt;11072&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11072" data-item-type="Demo.Northwind.Order" data-item-id="11072"&gt;Ernst Handel&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="6" style="top: 216px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11071" data-item-type="Demo.Northwind.Order" data-item-id="11071"&gt;11071&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11071" data-item-type="Demo.Northwind.Order" data-item-id="11071"&gt;LILA-Supermercado&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="7" style="top: 252px;"&gt;<br/>
+         &lt;div class="slick-cell l0 r0 align-right frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11070" data-item-type="Demo.Northwind.Order" data-item-id="11070"&gt;11070&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l1 r1 align-center frozen pinned-start"&gt;<br/>
+          &lt;a class="inline-action" data-action="print-invoice" title="invoice"&gt;&lt;i class="fa fa-file-pdf text-red"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l2 r2 frozen pinned-start"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11070" data-item-type="Demo.Northwind.Order" data-item-id="11070"&gt;Lehmanns Marktstand&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-body sg-main slick-viewport" tabindex="0" style="overflow: auto;"&gt;<br/>
+       &lt;div class="sg-body sg-main grid-canvas" tabindex="0"&gt;<br/>
+        &lt;div class="slick-row even" data-row="0" style="top: 0px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11077" data-item-type="Demo.Northwind.Order" data-item-id="11077"&gt;12/13/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-female text-danger text-opacity-75"&gt;&lt;/i&gt; Nancy Davolio<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/10/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇺🇸&lt;/i&gt; USA&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Albuquerque<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          8.53 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="1" style="top: 36px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11076" data-item-type="Demo.Northwind.Order" data-item-id="11076"&gt;12/13/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-female text-danger text-opacity-75"&gt;&lt;/i&gt; Margaret Peacock<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/10/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇫🇷&lt;/i&gt; France&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Marseille<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          38.28 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="2" style="top: 72px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11075" data-item-type="Demo.Northwind.Order" data-item-id="11075"&gt;12/13/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-female text-danger text-opacity-75"&gt;&lt;/i&gt; Laura Callahan<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/10/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇨🇭&lt;/i&gt; Switzerland&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Genève<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          6.19 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="3" style="top: 108px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11074" data-item-type="Demo.Northwind.Order" data-item-id="11074"&gt;12/13/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-male text-primary text-opacity-75"&gt;&lt;/i&gt; Robert King<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/10/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇩🇰&lt;/i&gt; Denmark&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Kobenhavn<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          18.44 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="4" style="top: 144px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11073" data-item-type="Demo.Northwind.Order" data-item-id="11073"&gt;12/12/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-male text-primary text-opacity-75"&gt;&lt;/i&gt; Andrew Fuller<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/09/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇲🇽&lt;/i&gt; Mexico&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          México D.F.<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          24.95 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="5" style="top: 180px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11072" data-item-type="Demo.Northwind.Order" data-item-id="11072"&gt;12/12/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-female text-danger text-opacity-75"&gt;&lt;/i&gt; Margaret Peacock<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/09/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-truck text-opacity-75"&gt;&lt;/i&gt; United Package<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇦🇹&lt;/i&gt; Austria&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Graz<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          258.64 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row even" data-row="6" style="top: 216px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11071" data-item-type="Demo.Northwind.Order" data-item-id="11071"&gt;12/12/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-female text-danger text-opacity-75"&gt;&lt;/i&gt; Nancy Davolio<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/09/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-plane text-opacity-75"&gt;&lt;/i&gt; Speedy Express<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇻🇪&lt;/i&gt; Venezuela&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Barquisimeto<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          0.93 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-row odd" data-row="7" style="top: 252px;"&gt;<br/>
+         &lt;div class="slick-cell l3 r3"&gt;<br/>
+          &lt;a class="s-EditLink s-Demo-Northwind-OrderLink" href="#Demo-Northwind-Order/11070" data-item-type="Demo.Northwind.Order" data-item-id="11070"&gt;12/12/2024&lt;/a&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l4 r4"&gt;<br/>
+          &lt;i class="fa fa-male text-primary text-opacity-75"&gt;&lt;/i&gt; Andrew Fuller<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l5 r5"&gt;<br/>
+          01/09/2025<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l6 r6"&gt;&lt;/div&gt;<br/>
+         &lt;div class="slick-cell l7 r7"&gt;<br/>
+          &lt;i class="text-info fa fa-plane text-opacity-75"&gt;&lt;/i&gt; Speedy Express<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l8 r8"&gt;<br/>
+          &lt;span class="country-with-flag"&gt;&lt;i class="country-flag unicode-emoji"&gt;🇩🇪&lt;/i&gt; Germany&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l9 r9"&gt;<br/>
+          Frankfurt a.M.<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="slick-cell l10 r10 align-right"&gt;<br/>
+          136 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-body sg-end slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-body sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-bottom sg-start slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-bottom sg-start grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-bottom sg-main slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-bottom sg-main grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div hidden class="sg-bottom sg-end slick-viewport" tabindex="0"&gt;<br/>
+       &lt;div class="sg-bottom sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-start slick-footerrow"&gt;<br/>
+       &lt;div class="sg-start slick-footerrow-columns"&gt;<br/>
+        &lt;div class="slick-footerrow-column l0 r0 align-right" data-c="0"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l1 r1 align-center" data-c="1"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l2 r2" data-c="2"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-main slick-footerrow"&gt;<br/>
+       &lt;div class="sg-main slick-footerrow-columns"&gt;<br/>
+        &lt;div class="slick-footerrow-column l3 r3" data-c="3"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l4 r4" data-c="4"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l5 r5" data-c="5"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l6 r6" data-c="6"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l7 r7" data-c="7"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l8 r8" data-c="8"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l9 r9" data-c="9"&gt;<br/>
+         &lt;span class="aggregate-disabled"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-footerrow-column l10 r10 align-right" data-c="10"&gt;<br/>
+         &lt;span class="aggregate agg-sum" title="Sum"&gt;9132.69 &lt;i class="fa fa-balance-scale text-secondary text-opacity-75"&gt;&lt;/i&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="sg-end slick-footerrow"&gt;<br/>
+       &lt;div class="sg-end slick-footerrow-columns"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="slick-focus-sink" tabindex="0"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="s-Serenity-SlickPager s-SlickPager slick-pg"&gt;<br/>
+      &lt;div class="slick-pg-in"&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-size"&gt;<br/>
+        &lt;select class="slick-pg-size" name="rp"&gt;&lt;option value="20"&gt;20&lt;/option&gt;&lt;option value="100" selected&gt;100&lt;/option&gt;&lt;option value="500"&gt;500&lt;/option&gt;&lt;option value="2500"&gt;2500&lt;/option&gt;&lt;/select&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-firstprev"&gt;<br/>
+        &lt;div class="slick-pg-first slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-pg-prev slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-control"&gt;<br/>
+        &lt;span class="slick-pg-control"&gt;&lt;span class="slick-pg-pagetext"&gt;Page&lt;/span&gt;&lt;input class="slick-pg-current mx-1" type="text" size="4" value="1"&gt;&lt;span class="slick-pg-pagesep px-1"&gt;/&lt;/span&gt;&lt;span class="slick-pg-total"&gt;9&lt;/span&gt;&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-nextlast"&gt;<br/>
+        &lt;div class="slick-pg-next slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="slick-pg-last slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-reload"&gt;<br/>
+        &lt;div class="slick-pg-reload slick-pg-btn"&gt;<br/>
+         &lt;span class="slick-pg-btn-span"&gt;&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="slick-pg-grp slick-pg-grp-stat"&gt;<br/>
+        &lt;span class="slick-pg-stat"&gt;Showing 1 to 100 of 830 total records&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;link href="/Serenity.Demo.Northwind/esm/Modules/Order/OrderPage.css?v=JC_eR8RoyvBJGM4lHe3uFw" rel="stylesheet" type="text/css"&gt;<br/>
+    &lt;script type="module" nonce="Ubj21Kwy_NlUxIiZmkrdvhnub5h5qYigpQ-2LLo7R4E"&gt;<br/>
+import pageInit from '/Serenity.Demo.Northwind/esm/Modules/Order/OrderPage.js?v=L4h1AqGbgabLbDpgrcaoHQ';<br/>
+pageInit();<br/>
+&lt;/script&gt;<br/>
+    &lt;div class="s-Panel s-Serenity-Demo-Northwind-OrderDialog s-Demo-Northwind-OrderDialog s-OrderDialog flex-layout" data-paneluniquename="1776671656828"&gt;<br/>
+     &lt;div class="panel-titlebar"&gt;<br/>
+      &lt;div class="panel-titlebar-text"&gt;<br/>
+       New Order<br/>
+      &lt;/div&gt;&lt;button type="button" class="panel-titlebar-close"&gt;&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="Serenity_Demo_Northwind_OrderDialog19" data-dialogtitle="New Order" class="panel-body" data-qrouterorder="1" data-qprhash="" data-qroute="new"&gt;<br/>
+      &lt;div id="Serenity_Demo_Northwind_OrderDialog19_Toolbar" class="s-Serenity-Toolbar s-Toolbar clearfix"&gt;<br/>
+       &lt;div class="tool-group"&gt;<br/>
+        &lt;div class="tool-button save-and-close-button icon-tool-button" data-action="save-and-close"&gt;<br/>
+         &lt;span class="button-inner"&gt;&lt;i class="fa fa-check-circle text-purple"&gt;&lt;/i&gt; Save&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button apply-changes-button icon-tool-button no-text" title="Apply Changes" data-action="apply-changes"&gt;<br/>
+         &lt;span class="button-inner"&gt;&lt;i class="fa fa-clipboard-check text-purple"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button delete-button icon-tool-button" data-action="delete" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;&lt;i class="fa fa-trash-o text-danger"&gt;&lt;/i&gt; Delete&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button undo-delete-button" data-action="undo-delete" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;Undelete&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button edit-button icon-tool-button" data-action="edit" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;&lt;i class="fa fa-edit"&gt;&lt;/i&gt; Edit&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button localization-button" data-action="localization" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;Localization&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button clone-button icon-tool-button" data-action="clone" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;&lt;i class="fa fa-clone"&gt;&lt;/i&gt; Clone&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="tool-button export-pdf-button" hidden&gt;<br/>
+         &lt;span class="button-inner"&gt;Invoice&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="s-Form"&gt;<br/>
+       &lt;form id="Serenity_Demo_Northwind_OrderDialog19_Form" action="" novalidate&gt;<br/>
+        &lt;div id="Serenity_Demo_Northwind_OrderDialog19_PropertyGrid" class="s-Serenity-PropertyGrid s-PropertyGrid"&gt;<br/>
+         &lt;ul class="nav nav-underline property-tabs" role="tablist"&gt;<br/>
+          &lt;li role="tab" class="nav-item"&gt;&lt;a class="nav-link active" data-bs-toggle="tab" href="#Serenity_PropertyGrid21_Tab0" data-tabkey="General"&gt;General&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;li role="tab" class="nav-item"&gt;&lt;a class="nav-link" data-bs-toggle="tab" href="#Serenity_PropertyGrid21_Tab1" data-tabkey="Shipping"&gt;Shipping&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;/ul&gt;<br/>
+         &lt;div class="tab-content property-panes"&gt;<br/>
+          &lt;div id="Serenity_PropertyGrid21_Tab0" class="tab-pane fade show active" role="tabpanel"&gt;<br/>
+           &lt;div class="categories"&gt;<br/>
+            &lt;div class="category" data-category="Order"&gt;<br/>
+             &lt;div class="category-title"&gt;<br/>
+              Order<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field CustomerID" data-itemname="CustomerID"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_CustomerID" title="Customer"&gt;&lt;sup title="this field is required"&gt;*&lt;/sup&gt;Customer&lt;/label&gt;<br/>
+              &lt;div class="select2-container select2-with-searchbox editor s-Serenity-Demo-Northwind-CustomerEditor s-Demo-Northwind-CustomerEditor s-CustomerEditor required select2-dropdown-open select2-container-active" id="s2id_Serenity_Demo_Northwind_OrderDialog19_CustomerID" title="" data-select2-last-term="Alfreds Futterkiste"&gt;<br/>
+               &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-8"&gt;--select--&lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen8" class="select2-offscreen"&gt;*Customer&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-8" id="s2id_autogen8" tabindex="null" disabled&gt;<br/>
+              &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_CustomerID" class="editor s-Serenity-Demo-Northwind-CustomerEditor s-Demo-Northwind-CustomerEditor s-CustomerEditor select2-offscreen required" name="CustomerID" maxlength="5" placeholder="--select--" tabindex="-1" title="*Customer"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field OrderDate" data-itemname="OrderDate"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_OrderDate" title="Order Date"&gt;&lt;sup title="this field is required"&gt;*&lt;/sup&gt;Order Date&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_OrderDate" class="editor s-Serenity-DateEditor s-DateEditor flatpickr-input customValidate required" name="OrderDate"&gt;&lt;button type="button" class="ui-datepicker-trigger"&gt;&lt;/button&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field RequiredDate" data-itemname="RequiredDate"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_RequiredDate" title="Required Date"&gt;Required Date&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_RequiredDate" class="editor s-Serenity-DateEditor s-DateEditor flatpickr-input customValidate" name="RequiredDate"&gt;&lt;button type="button" class="ui-datepicker-trigger"&gt;&lt;/button&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field EmployeeID" data-itemname="EmployeeID"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_EmployeeID" title="Employee"&gt;Employee&lt;/label&gt;<br/>
+              &lt;div class="select2-container select2-with-searchbox editor s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderDialog19_EmployeeID" title=""&gt;<br/>
+               &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-9"&gt;--select--&lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen9" class="select2-offscreen"&gt;Employee&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-9" id="s2id_autogen9" tabindex="null"&gt;<br/>
+               &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+                &lt;div class="select2-search"&gt;<br/>
+                 &lt;label for="s2id_autogen9_search" class="select2-offscreen"&gt;Employee&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-9" id="s2id_autogen9_search" placeholder=""&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;ul class="select2-results" role="listbox" id="select2-results-9"&gt;&lt;/ul&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_EmployeeID" class="editor s-Serenity-LookupEditor s-LookupEditor select2-offscreen" name="EmployeeID" placeholder="--select--" tabindex="-1" title="Employee"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="category" data-category="Order Details"&gt;<br/>
+             &lt;div class="category-title"&gt;<br/>
+              Order Details<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field DetailList" data-itemname="DetailList"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_DetailList" title="Details"&gt;Details&lt;/label&gt;<br/>
+              &lt;div id="Serenity_Demo_Northwind_OrderDialog19_DetailList" class="editor s-Serenity-Demo-Northwind-OrderDetailsEditor s-Demo-Northwind-OrderDetailsEditor s-OrderDetailsEditor s-DataGrid require-layout route-handler"&gt;<br/>
+               &lt;div class="grid-toolbar s-Serenity-Toolbar s-Toolbar clearfix"&gt;<br/>
+                &lt;div class="s-QuickSearchBar"&gt;<br/>
+                 &lt;span class="quick-search-icon"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;&lt;input type="text" class="s-Serenity-QuickSearchInput s-QuickSearchInput" title="enter the text to search for..." placeholder="search..." id="Serenity_Demo_Northwind_OrderDetailsEditor26_QuickSearchInput"&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="tool-group"&gt;<br/>
+                 &lt;div class="tool-button add-button icon-tool-button" data-action="add"&gt;<br/>
+                  &lt;span class="button-inner"&gt;&lt;i class="fa fa-plus-circle text-green"&gt;&lt;/i&gt; New Order Detail&lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="tool-button refresh-button icon-tool-button no-text" title="Refresh" data-action="refresh" hidden&gt;<br/>
+                  &lt;span class="button-inner"&gt;&lt;i class="fa fa-refresh text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="tool-button column-picker-button icon-tool-button no-text" title="Column Picker" data-action="column-picker"&gt;<br/>
+                  &lt;span class="button-inner"&gt;&lt;i class="fa fa-th-list text-blue"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="tool-button edit-filter-button icon-tool-button no-text" title="edit filter" data-action="edit-filter" hidden&gt;<br/>
+                  &lt;span class="button-inner"&gt;&lt;i class="fa fa-filter"&gt;&lt;/i&gt; &lt;/span&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+               &lt;div class="grid-container slick-container ltr _sleekgrid_2_ sleek-vars" style="overflow: hidden; outline: 0px; position: relative; --sg-start-width: 0px; --sg-end-width: 0px; --sg-main-width: 798.203px; --sg-virtual-width: 840px; --sg-row-height: 36px; --sg-cell-height: 36px; --sg-scrollbar-w: 10px; --sg-scrollbar-h: 10px; --l0: 0px; --r0: 772px; --l1: 68px; --r1: 532px; --l2: 308px; --r2: 399px; --l3: 441px; --r3: 266px; --l4: 574px; --r4: 133px; --l5: 707px; --r5: 0px; --sg-top-height: 0px; --sg-bottom-height: 0px; --sg-body-height: 116px; --sg-virtual-height: 106px;"&gt;<br/>
+                &lt;div class="slick-focus-sink" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;div class="sg-start slick-header"&gt;<br/>
+                 &lt;div class="sg-start slick-header-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="sg-main slick-header"&gt;<br/>
+                 &lt;div class="sg-main slick-header-columns"&gt;<br/>
+                  &lt;div class="slick-header-column" data-id="RowActions" data-c="0" id="_sleekgrid_2_RowActions" title="" style="width: 68px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;&lt;/span&gt;&lt;span data-column-id="RowActions" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="slick-header-column slick-header-sortable" data-id="ProductName" data-c="1" id="_sleekgrid_2_ProductName" title="" style="width: 240px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;Product Name&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;<br/>
+                   &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;&lt;span data-column-id="ProductName" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="slick-header-column slick-header-sortable" data-id="UnitPrice" data-c="2" id="_sleekgrid_2_UnitPrice" title="" style="width: 133px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;Unit Price&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;<br/>
+                   &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;&lt;span data-column-id="UnitPrice" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="slick-header-column slick-header-sortable" data-id="Quantity" data-c="3" id="_sleekgrid_2_Quantity" title="" style="width: 133px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;Quantity&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;<br/>
+                   &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;&lt;span data-column-id="Quantity" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="slick-header-column slick-header-sortable" data-id="Discount" data-c="4" id="_sleekgrid_2_Discount" title="" style="width: 133px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;Discount&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;<br/>
+                   &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;&lt;span data-column-id="Discount" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="slick-header-column slick-header-sortable" data-id="LineTotal" data-c="5" id="_sleekgrid_2_LineTotal" title="" style="width: 133px;"&gt;<br/>
+                   &lt;span class="slick-column-name"&gt;Line Total&lt;/span&gt;&lt;span class="slick-sort-indicator"&gt;&lt;sub&gt;&lt;/sub&gt;&lt;/span&gt;<br/>
+                   &lt;div class="slick-resizable-handle"&gt;&lt;/div&gt;&lt;span data-column-id="LineTotal" data-plugin="HeaderMenu" class="no-drag s-header-menu-button"&gt;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="sg-end slick-header"&gt;<br/>
+                 &lt;div class="sg-end slick-header-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="slick-top-panel-container"&gt;<br/>
+                 &lt;div class="slick-top-panel"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-start slick-headerrow"&gt;<br/>
+                 &lt;div class="sg-start slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-main slick-headerrow"&gt;<br/>
+                 &lt;div class="sg-main slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-end slick-headerrow"&gt;<br/>
+                 &lt;div class="sg-end slick-headerrow-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-top sg-start slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-top sg-start grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-top sg-main slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-top sg-main grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-top sg-end slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-top sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-body sg-start slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-body sg-start grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="sg-body sg-main slick-viewport" tabindex="0" style="overflow: auto;"&gt;<br/>
+                 &lt;div class="sg-body sg-main grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-body sg-end slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-body sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-bottom sg-start slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-bottom sg-start grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-bottom sg-main slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-bottom sg-main grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-bottom sg-end slick-viewport" tabindex="0"&gt;<br/>
+                 &lt;div class="sg-bottom sg-end grid-canvas" tabindex="0"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-start slick-footerrow"&gt;<br/>
+                 &lt;div class="sg-start slick-footerrow-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-main slick-footerrow"&gt;<br/>
+                 &lt;div class="sg-main slick-footerrow-columns"&gt;<br/>
+                  &lt;div class="slick-footerrow-column l0 r0" data-c="0"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="slick-footerrow-column l1 r1" data-c="1"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="slick-footerrow-column l2 r2 align-right" data-c="2"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="slick-footerrow-column l3 r3 align-right" data-c="3"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="slick-footerrow-column l4 r4 align-right" data-c="4"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="slick-footerrow-column l5 r5 align-right" data-c="5"&gt;&lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div hidden class="sg-end slick-footerrow"&gt;<br/>
+                 &lt;div class="sg-end slick-footerrow-columns"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;div class="slick-focus-sink" tabindex="0"&gt;&lt;/div&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+          &lt;div id="Serenity_PropertyGrid21_Tab1" class="tab-pane fade" role="tabpanel"&gt;<br/>
+           &lt;div class="categories"&gt;<br/>
+            &lt;div class="category" data-category="Info"&gt;<br/>
+             &lt;div class="category-title"&gt;<br/>
+              Info<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShippedDate" data-itemname="ShippedDate"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShippedDate" title="Shipped Date"&gt;Shipped Date&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShippedDate" class="editor s-Serenity-DateEditor s-DateEditor flatpickr-input customValidate" name="ShippedDate"&gt;&lt;button type="button" class="ui-datepicker-trigger"&gt;&lt;/button&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipVia" data-itemname="ShipVia"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipVia" title="Ship Via"&gt;Ship Via&lt;/label&gt;<br/>
+              &lt;div class="select2-container select2-with-searchbox editor s-Serenity-LookupEditor s-LookupEditor" id="s2id_Serenity_Demo_Northwind_OrderDialog19_ShipVia" title=""&gt;<br/>
+               &lt;a href="javascript:void(0)" class="select2-choice select2-default" tabindex="-1"&gt;&lt;span class="select2-chosen" id="select2-chosen-10"&gt;--select--&lt;/span&gt;&lt;abbr class="select2-search-choice-close"&gt;&lt;/abbr&gt;&lt;span class="select2-arrow" role="presentation"&gt;&lt;b role="presentation"&gt;&lt;/b&gt;&lt;/span&gt;&lt;/a&gt;&lt;label for="s2id_autogen10" class="select2-offscreen"&gt;Ship Via&lt;/label&gt;&lt;input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-10" id="s2id_autogen10" tabindex="null"&gt;<br/>
+               &lt;div class="select2-drop select2-display-none select2-with-searchbox"&gt;<br/>
+                &lt;div class="select2-search"&gt;<br/>
+                 &lt;label for="s2id_autogen10_search" class="select2-offscreen"&gt;Ship Via&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-10" id="s2id_autogen10_search" placeholder=""&gt;<br/>
+                &lt;/div&gt;<br/>
+                &lt;ul class="select2-results" role="listbox" id="select2-results-10"&gt;&lt;/ul&gt;<br/>
+               &lt;/div&gt;<br/>
+              &lt;/div&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipVia" class="editor s-Serenity-LookupEditor s-LookupEditor select2-offscreen" name="ShipVia" placeholder="--select--" tabindex="-1" title="Ship Via"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field Freight" data-itemname="Freight"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_Freight" title="Freight"&gt;Freight&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_Freight" class="editor s-Serenity-DecimalEditor s-DecimalEditor decimalQ" name="Freight"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+            &lt;div class="category" data-category="Ship To"&gt;<br/>
+             &lt;div class="category-title"&gt;<br/>
+              Ship To<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipName" data-itemname="ShipName"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipName" title="Ship Name"&gt;Ship Name&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipName" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipName" maxlength="40"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipAddress" data-itemname="ShipAddress"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipAddress" title="Ship Address"&gt;Ship Address&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipAddress" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipAddress" maxlength="60"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipCity" data-itemname="ShipCity"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipCity" title="Ship City"&gt;Ship City&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipCity" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipCity" maxlength="15"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipRegion" data-itemname="ShipRegion"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipRegion" title="Ship Region"&gt;Ship Region&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipRegion" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipRegion" maxlength="15"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipPostalCode" data-itemname="ShipPostalCode"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipPostalCode" title="Ship Postal Code"&gt;Ship Postal Code&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipPostalCode" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipPostalCode" maxlength="10"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+             &lt;div class="field ShipCountry" data-itemname="ShipCountry"&gt;<br/>
+              &lt;label class="caption" for="Serenity_Demo_Northwind_OrderDialog19_ShipCountry" title="Ship Country"&gt;Ship Country&lt;/label&gt;&lt;input type="text" id="Serenity_Demo_Northwind_OrderDialog19_ShipCountry" class="editor s-Serenity-StringEditor s-StringEditor" name="ShipCountry" maxlength="15"&gt;<br/>
+              &lt;div class="vx"&gt;&lt;/div&gt;<br/>
+              &lt;div class="clear"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt;<br/>
+            &lt;/div&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/form&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="panel-footer"&gt;&lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/section&gt;<br/>
+  &lt;/main&gt;<br/>
+  &lt;div class="s-header-menu dropdown-menu" data-plugin="HeaderMenu" data-bs-auto-close="outside" hidden&gt;<br/>
+   &lt;div class="title-actions"&gt;<br/>
+    &lt;div class="dropdown-header"&gt;&lt;/div&gt;&lt;a hidden class="dropdown-item" href="#" data-action="hide-column" title="Hide Column"&gt;&lt;i class="fa fa-eye-slash text-red"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="column-picker" title="Column Picker"&gt;&lt;i class="fa fa-th-list text-blue"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="reset-columns" title="Reset Columns"&gt;&lt;i class="fa fa-redo"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="edit-column-filter" title="Edit Column Filter"&gt;&lt;i class="fa fa-filter"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="split-actions"&gt;<br/>
+    &lt;span hidden class="dropdown-item-text"&gt;Sort&lt;/span&gt;&lt;a hidden class="dropdown-item" href="#" data-action="sort-ascending"&gt;&lt;i class="fa fa-sort-amount-up-alt"&gt;&lt;/i&gt; Desc&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="sort-descending"&gt;&lt;i class="fa fa-sort-amount-down"&gt;&lt;/i&gt; Asc&lt;/a&gt;&lt;span class="dropdown-item-text"&gt;Move&lt;/span&gt;&lt;a class="dropdown-item disabled" href="#" data-action="move-left"&gt;&lt;i class="fa fa-arrow-left"&gt;&lt;/i&gt; Left&lt;/a&gt;&lt;a class="dropdown-item disabled" href="#" data-action="move-right"&gt;&lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt; Right&lt;/a&gt;&lt;span class="dropdown-item-text"&gt;Pin&lt;/span&gt;&lt;a class="dropdown-item" href="#" data-action="pin-left"&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-angle" viewbox="0 0 16 16" style="width: 1rem; height: 1rem;"&gt;<br/>
+      &lt;path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146m.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a5 5 0 0 0-.288-.076 5 5 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a5 5 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034q.172.002.343-.04L9.927 2.028q-.042.172-.04.343a1.8 1.8 0 0 0 .062.46z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="pin-right"&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-angle" viewbox="0 0 16 16" style="transform: rotate(270deg); width: 1rem; height: 1rem;"&gt;<br/>
+      &lt;path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146m.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a5 5 0 0 0-.288-.076 5 5 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a5 5 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034q.172.002.343-.04L9.927 2.028q-.042.172-.04.343a1.8 1.8 0 0 0 .062.46z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/a&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="dropdown-divider"&gt;&lt;/div&gt;&lt;a class="dropdown-item" href="#" data-action="autosize-this"&gt;&lt;i class="fa fa-text-width"&gt;&lt;/i&gt; Autosize This Column&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="autosize-all"&gt;&lt;i class="fa fa-arrows-alt-h"&gt;&lt;/i&gt; Autosize All Columns&lt;/a&gt;<br/>
+   &lt;div class="dropdown-divider"&gt;&lt;/div&gt;&lt;a class="dropdown-item" href="#" data-action="groupby-this"&gt;&lt;i class="fa fa-stream"&gt;&lt;/i&gt; &lt;/a&gt;<br/>
+   &lt;div class="dropdown-divider"&gt;&lt;/div&gt;<br/>
+   &lt;div class="aggregate-actions"&gt;<br/>
+    &lt;div class="dropdown-item-text"&gt;<br/>
+     Agg<br/>
+    &lt;/div&gt;&lt;a class="dropdown-item" href="#" data-action="set-summary-type" data-agg="1"&gt;&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="set-summary-type" data-agg="2"&gt;&lt;/a&gt;<br/>
+    &lt;div class="dropdown-item-text"&gt;&lt;/div&gt;&lt;a class="dropdown-item" href="#" data-action="set-summary-type" data-agg="3"&gt;&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="set-summary-type" data-agg="4"&gt;&lt;/a&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="flatpickr-calendar animate" tabindex="-1"&gt;<br/>
+   &lt;div class="flatpickr-months"&gt;<br/>
+    &lt;span class="flatpickr-prev-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+    &lt;div class="flatpickr-month"&gt;<br/>
+     &lt;div class="flatpickr-current-month"&gt;<br/>
+      &lt;select class="flatpickr-monthDropdown-months" aria-label="Month" tabindex="-1"&gt;&lt;option class="flatpickr-monthDropdown-month" value="0" tabindex="-1"&gt;January&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="1" tabindex="-1"&gt;February&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="2" tabindex="-1"&gt;March&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="3" tabindex="-1"&gt;April&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="4" tabindex="-1"&gt;May&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="5" tabindex="-1"&gt;June&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="6" tabindex="-1"&gt;July&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="7" tabindex="-1"&gt;August&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="8" tabindex="-1"&gt;September&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="9" tabindex="-1"&gt;October&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="10" tabindex="-1"&gt;November&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="11" tabindex="-1"&gt;December&lt;/option&gt;&lt;/select&gt;<br/>
+      &lt;div class="numInputWrapper"&gt;<br/>
+       &lt;input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"&gt;&lt;span class="arrowUp"&gt;&lt;/span&gt;&lt;span class="arrowDown"&gt;&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;span class="flatpickr-next-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="flatpickr-innerContainer"&gt;<br/>
+    &lt;div class="flatpickr-rContainer"&gt;<br/>
+     &lt;div class="flatpickr-weekdays"&gt;<br/>
+      &lt;div class="flatpickr-weekdaycontainer"&gt;&lt;span class="flatpickr-weekday"&gt; Sun&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Mon&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Tue&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Wed&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Thu&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Fri&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Sat &lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flatpickr-days" tabindex="-1"&gt;<br/>
+      &lt;div class="dayContainer"&gt;<br/>
+       &lt;span class="flatpickr-day prevMonthDay" aria-label="March 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 31, 2026" tabindex="-1"&gt;31&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 10, 2026" tabindex="-1"&gt;10&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 11, 2026" tabindex="-1"&gt;11&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 12, 2026" tabindex="-1"&gt;12&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 13, 2026" tabindex="-1"&gt;13&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 14, 2026" tabindex="-1"&gt;14&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 15, 2026" tabindex="-1"&gt;15&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 16, 2026" tabindex="-1"&gt;16&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 17, 2026" tabindex="-1"&gt;17&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 18, 2026" tabindex="-1"&gt;18&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 19, 2026" tabindex="-1"&gt;19&lt;/span&gt;&lt;span class="flatpickr-day today" aria-label="April 20, 2026" aria-current="date" tabindex="-1"&gt;20&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 21, 2026" tabindex="-1"&gt;21&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 22, 2026" tabindex="-1"&gt;22&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 23, 2026" tabindex="-1"&gt;23&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 24, 2026" tabindex="-1"&gt;24&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 25, 2026" tabindex="-1"&gt;25&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 26, 2026" tabindex="-1"&gt;26&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 27, 2026" tabindex="-1"&gt;27&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 28, 2026" tabindex="-1"&gt;28&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="flatpickr-calendar animate" tabindex="-1"&gt;<br/>
+   &lt;div class="flatpickr-months"&gt;<br/>
+    &lt;span class="flatpickr-prev-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+    &lt;div class="flatpickr-month"&gt;<br/>
+     &lt;div class="flatpickr-current-month"&gt;<br/>
+      &lt;select class="flatpickr-monthDropdown-months" aria-label="Month" tabindex="-1"&gt;&lt;option class="flatpickr-monthDropdown-month" value="0" tabindex="-1"&gt;January&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="1" tabindex="-1"&gt;February&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="2" tabindex="-1"&gt;March&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="3" tabindex="-1"&gt;April&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="4" tabindex="-1"&gt;May&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="5" tabindex="-1"&gt;June&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="6" tabindex="-1"&gt;July&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="7" tabindex="-1"&gt;August&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="8" tabindex="-1"&gt;September&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="9" tabindex="-1"&gt;October&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="10" tabindex="-1"&gt;November&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="11" tabindex="-1"&gt;December&lt;/option&gt;&lt;/select&gt;<br/>
+      &lt;div class="numInputWrapper"&gt;<br/>
+       &lt;input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"&gt;&lt;span class="arrowUp"&gt;&lt;/span&gt;&lt;span class="arrowDown"&gt;&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;span class="flatpickr-next-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="flatpickr-innerContainer"&gt;<br/>
+    &lt;div class="flatpickr-rContainer"&gt;<br/>
+     &lt;div class="flatpickr-weekdays"&gt;<br/>
+      &lt;div class="flatpickr-weekdaycontainer"&gt;&lt;span class="flatpickr-weekday"&gt; Sun&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Mon&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Tue&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Wed&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Thu&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Fri&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Sat &lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flatpickr-days" tabindex="-1"&gt;<br/>
+      &lt;div class="dayContainer"&gt;<br/>
+       &lt;span class="flatpickr-day prevMonthDay" aria-label="March 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 31, 2026" tabindex="-1"&gt;31&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 10, 2026" tabindex="-1"&gt;10&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 11, 2026" tabindex="-1"&gt;11&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 12, 2026" tabindex="-1"&gt;12&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 13, 2026" tabindex="-1"&gt;13&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 14, 2026" tabindex="-1"&gt;14&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 15, 2026" tabindex="-1"&gt;15&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 16, 2026" tabindex="-1"&gt;16&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 17, 2026" tabindex="-1"&gt;17&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 18, 2026" tabindex="-1"&gt;18&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 19, 2026" tabindex="-1"&gt;19&lt;/span&gt;&lt;span class="flatpickr-day today" aria-label="April 20, 2026" aria-current="date" tabindex="-1"&gt;20&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 21, 2026" tabindex="-1"&gt;21&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 22, 2026" tabindex="-1"&gt;22&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 23, 2026" tabindex="-1"&gt;23&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 24, 2026" tabindex="-1"&gt;24&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 25, 2026" tabindex="-1"&gt;25&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 26, 2026" tabindex="-1"&gt;26&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 27, 2026" tabindex="-1"&gt;27&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 28, 2026" tabindex="-1"&gt;28&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;ul class="s-AggregatesPopup" hidden&gt;<br/>
+   &lt;li data-agg="1"&gt;Sum&lt;/li&gt;<br/>
+   &lt;li data-agg="2"&gt;Avg&lt;/li&gt;<br/>
+   &lt;li data-agg="3"&gt;Min&lt;/li&gt;<br/>
+   &lt;li data-agg="4"&gt;Max&lt;/li&gt;<br/>
+  &lt;/ul&gt;<br/>
+  &lt;div class="flatpickr-calendar animate" tabindex="-1"&gt;<br/>
+   &lt;div class="flatpickr-months"&gt;<br/>
+    &lt;span class="flatpickr-prev-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+    &lt;div class="flatpickr-month"&gt;<br/>
+     &lt;div class="flatpickr-current-month"&gt;<br/>
+      &lt;select class="flatpickr-monthDropdown-months" aria-label="Month" tabindex="-1"&gt;&lt;option class="flatpickr-monthDropdown-month" value="0" tabindex="-1"&gt;January&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="1" tabindex="-1"&gt;February&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="2" tabindex="-1"&gt;March&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="3" tabindex="-1"&gt;April&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="4" tabindex="-1"&gt;May&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="5" tabindex="-1"&gt;June&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="6" tabindex="-1"&gt;July&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="7" tabindex="-1"&gt;August&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="8" tabindex="-1"&gt;September&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="9" tabindex="-1"&gt;October&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="10" tabindex="-1"&gt;November&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="11" tabindex="-1"&gt;December&lt;/option&gt;&lt;/select&gt;<br/>
+      &lt;div class="numInputWrapper"&gt;<br/>
+       &lt;input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"&gt;&lt;span class="arrowUp"&gt;&lt;/span&gt;&lt;span class="arrowDown"&gt;&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;span class="flatpickr-next-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="flatpickr-innerContainer"&gt;<br/>
+    &lt;div class="flatpickr-rContainer"&gt;<br/>
+     &lt;div class="flatpickr-weekdays"&gt;<br/>
+      &lt;div class="flatpickr-weekdaycontainer"&gt;&lt;span class="flatpickr-weekday"&gt; Sun&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Mon&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Tue&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Wed&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Thu&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Fri&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Sat &lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flatpickr-days" tabindex="-1"&gt;<br/>
+      &lt;div class="dayContainer"&gt;<br/>
+       &lt;span class="flatpickr-day prevMonthDay" aria-label="March 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 31, 2026" tabindex="-1"&gt;31&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 10, 2026" tabindex="-1"&gt;10&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 11, 2026" tabindex="-1"&gt;11&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 12, 2026" tabindex="-1"&gt;12&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 13, 2026" tabindex="-1"&gt;13&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 14, 2026" tabindex="-1"&gt;14&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 15, 2026" tabindex="-1"&gt;15&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 16, 2026" tabindex="-1"&gt;16&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 17, 2026" tabindex="-1"&gt;17&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 18, 2026" tabindex="-1"&gt;18&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 19, 2026" tabindex="-1"&gt;19&lt;/span&gt;&lt;span class="flatpickr-day today" aria-label="April 20, 2026" aria-current="date" tabindex="-1"&gt;20&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 21, 2026" tabindex="-1"&gt;21&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 22, 2026" tabindex="-1"&gt;22&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 23, 2026" tabindex="-1"&gt;23&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 24, 2026" tabindex="-1"&gt;24&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 25, 2026" tabindex="-1"&gt;25&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 26, 2026" tabindex="-1"&gt;26&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 27, 2026" tabindex="-1"&gt;27&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 28, 2026" tabindex="-1"&gt;28&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="flatpickr-calendar animate" tabindex="-1"&gt;<br/>
+   &lt;div class="flatpickr-months"&gt;<br/>
+    &lt;span class="flatpickr-prev-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+    &lt;div class="flatpickr-month"&gt;<br/>
+     &lt;div class="flatpickr-current-month"&gt;<br/>
+      &lt;select class="flatpickr-monthDropdown-months" aria-label="Month" tabindex="-1"&gt;&lt;option class="flatpickr-monthDropdown-month" value="0" tabindex="-1"&gt;January&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="1" tabindex="-1"&gt;February&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="2" tabindex="-1"&gt;March&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="3" tabindex="-1"&gt;April&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="4" tabindex="-1"&gt;May&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="5" tabindex="-1"&gt;June&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="6" tabindex="-1"&gt;July&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="7" tabindex="-1"&gt;August&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="8" tabindex="-1"&gt;September&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="9" tabindex="-1"&gt;October&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="10" tabindex="-1"&gt;November&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="11" tabindex="-1"&gt;December&lt;/option&gt;&lt;/select&gt;<br/>
+      &lt;div class="numInputWrapper"&gt;<br/>
+       &lt;input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"&gt;&lt;span class="arrowUp"&gt;&lt;/span&gt;&lt;span class="arrowDown"&gt;&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;span class="flatpickr-next-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="flatpickr-innerContainer"&gt;<br/>
+    &lt;div class="flatpickr-rContainer"&gt;<br/>
+     &lt;div class="flatpickr-weekdays"&gt;<br/>
+      &lt;div class="flatpickr-weekdaycontainer"&gt;&lt;span class="flatpickr-weekday"&gt; Sun&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Mon&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Tue&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Wed&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Thu&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Fri&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Sat &lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flatpickr-days" tabindex="-1"&gt;<br/>
+      &lt;div class="dayContainer"&gt;<br/>
+       &lt;span class="flatpickr-day prevMonthDay" aria-label="March 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 31, 2026" tabindex="-1"&gt;31&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 10, 2026" tabindex="-1"&gt;10&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 11, 2026" tabindex="-1"&gt;11&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 12, 2026" tabindex="-1"&gt;12&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 13, 2026" tabindex="-1"&gt;13&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 14, 2026" tabindex="-1"&gt;14&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 15, 2026" tabindex="-1"&gt;15&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 16, 2026" tabindex="-1"&gt;16&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 17, 2026" tabindex="-1"&gt;17&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 18, 2026" tabindex="-1"&gt;18&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 19, 2026" tabindex="-1"&gt;19&lt;/span&gt;&lt;span class="flatpickr-day today" aria-label="April 20, 2026" aria-current="date" tabindex="-1"&gt;20&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 21, 2026" tabindex="-1"&gt;21&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 22, 2026" tabindex="-1"&gt;22&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 23, 2026" tabindex="-1"&gt;23&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 24, 2026" tabindex="-1"&gt;24&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 25, 2026" tabindex="-1"&gt;25&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 26, 2026" tabindex="-1"&gt;26&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 27, 2026" tabindex="-1"&gt;27&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 28, 2026" tabindex="-1"&gt;28&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="s-header-menu dropdown-menu" data-plugin="HeaderMenu" data-bs-auto-close="outside" hidden&gt;<br/>
+   &lt;div class="title-actions"&gt;<br/>
+    &lt;div class="dropdown-header"&gt;&lt;/div&gt;&lt;a hidden class="dropdown-item" href="#" data-action="hide-column" title="Hide Column"&gt;&lt;i class="fa fa-eye-slash text-red"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="column-picker" title="Column Picker"&gt;&lt;i class="fa fa-th-list text-blue"&gt;&lt;/i&gt;&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="reset-columns" title="Reset Columns"&gt;&lt;i class="fa fa-redo"&gt;&lt;/i&gt;&lt;/a&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="split-actions"&gt;<br/>
+    &lt;span hidden class="dropdown-item-text"&gt;Sort&lt;/span&gt;&lt;a hidden class="dropdown-item" href="#" data-action="sort-ascending"&gt;&lt;i class="fa fa-sort-amount-up-alt"&gt;&lt;/i&gt; Desc&lt;/a&gt;&lt;a hidden class="dropdown-item" href="#" data-action="sort-descending"&gt;&lt;i class="fa fa-sort-amount-down"&gt;&lt;/i&gt; Asc&lt;/a&gt;&lt;span class="dropdown-item-text"&gt;Move&lt;/span&gt;&lt;a class="dropdown-item disabled" href="#" data-action="move-left"&gt;&lt;i class="fa fa-arrow-left"&gt;&lt;/i&gt; Left&lt;/a&gt;&lt;a class="dropdown-item disabled" href="#" data-action="move-right"&gt;&lt;i class="fa fa-arrow-right"&gt;&lt;/i&gt; Right&lt;/a&gt;&lt;span class="dropdown-item-text"&gt;Pin&lt;/span&gt;&lt;a class="dropdown-item" href="#" data-action="pin-left"&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-angle" viewbox="0 0 16 16" style="width: 1rem; height: 1rem;"&gt;<br/>
+      &lt;path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146m.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a5 5 0 0 0-.288-.076 5 5 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a5 5 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034q.172.002.343-.04L9.927 2.028q-.042.172-.04.343a1.8 1.8 0 0 0 .062.46z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/a&gt;&lt;a class="dropdown-item" href="#" data-action="pin-right"&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pin-angle" viewbox="0 0 16 16" style="transform: rotate(270deg); width: 1rem; height: 1rem;"&gt;<br/>
+      &lt;path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a6 6 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707s.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a6 6 0 0 1 1.013.16l3.134-3.133a3 3 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146m.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a5 5 0 0 0-.288-.076 5 5 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a5 5 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034q.172.002.343-.04L9.927 2.028q-.042.172-.04.343a1.8 1.8 0 0 0 .062.46z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/a&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div class="flatpickr-calendar animate" tabindex="-1"&gt;<br/>
+   &lt;div class="flatpickr-months"&gt;<br/>
+    &lt;span class="flatpickr-prev-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+    &lt;div class="flatpickr-month"&gt;<br/>
+     &lt;div class="flatpickr-current-month"&gt;<br/>
+      &lt;select class="flatpickr-monthDropdown-months" aria-label="Month" tabindex="-1"&gt;&lt;option class="flatpickr-monthDropdown-month" value="0" tabindex="-1"&gt;January&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="1" tabindex="-1"&gt;February&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="2" tabindex="-1"&gt;March&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="3" tabindex="-1"&gt;April&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="4" tabindex="-1"&gt;May&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="5" tabindex="-1"&gt;June&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="6" tabindex="-1"&gt;July&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="7" tabindex="-1"&gt;August&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="8" tabindex="-1"&gt;September&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="9" tabindex="-1"&gt;October&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="10" tabindex="-1"&gt;November&lt;/option&gt;&lt;option class="flatpickr-monthDropdown-month" value="11" tabindex="-1"&gt;December&lt;/option&gt;&lt;/select&gt;<br/>
+      &lt;div class="numInputWrapper"&gt;<br/>
+       &lt;input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"&gt;&lt;span class="arrowUp"&gt;&lt;/span&gt;&lt;span class="arrowDown"&gt;&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;&lt;span class="flatpickr-next-month"&gt;<br/>
+     &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 17 17"&gt;<br/>
+      &lt;g&gt;&lt;/g&gt;&lt;path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;&lt;/span&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div class="flatpickr-innerContainer"&gt;<br/>
+    &lt;div class="flatpickr-rContainer"&gt;<br/>
+     &lt;div class="flatpickr-weekdays"&gt;<br/>
+      &lt;div class="flatpickr-weekdaycontainer"&gt;&lt;span class="flatpickr-weekday"&gt; Sun&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Mon&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Tue&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Wed&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Thu&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Fri&lt;/span&gt;&lt;span class="flatpickr-weekday"&gt;Sat &lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="flatpickr-days" tabindex="-1"&gt;<br/>
+      &lt;div class="dayContainer"&gt;<br/>
+       &lt;span class="flatpickr-day prevMonthDay" aria-label="March 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day prevMonthDay" aria-label="March 31, 2026" tabindex="-1"&gt;31&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 10, 2026" tabindex="-1"&gt;10&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 11, 2026" tabindex="-1"&gt;11&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 12, 2026" tabindex="-1"&gt;12&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 13, 2026" tabindex="-1"&gt;13&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 14, 2026" tabindex="-1"&gt;14&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 15, 2026" tabindex="-1"&gt;15&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 16, 2026" tabindex="-1"&gt;16&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 17, 2026" tabindex="-1"&gt;17&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 18, 2026" tabindex="-1"&gt;18&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 19, 2026" tabindex="-1"&gt;19&lt;/span&gt;&lt;span class="flatpickr-day today" aria-label="April 20, 2026" aria-current="date" tabindex="-1"&gt;20&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 21, 2026" tabindex="-1"&gt;21&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 22, 2026" tabindex="-1"&gt;22&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 23, 2026" tabindex="-1"&gt;23&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 24, 2026" tabindex="-1"&gt;24&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 25, 2026" tabindex="-1"&gt;25&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 26, 2026" tabindex="-1"&gt;26&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 27, 2026" tabindex="-1"&gt;27&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 28, 2026" tabindex="-1"&gt;28&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 29, 2026" tabindex="-1"&gt;29&lt;/span&gt;&lt;span class="flatpickr-day" aria-label="April 30, 2026" tabindex="-1"&gt;30&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 1, 2026" tabindex="-1"&gt;1&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 2, 2026" tabindex="-1"&gt;2&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 3, 2026" tabindex="-1"&gt;3&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 4, 2026" tabindex="-1"&gt;4&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 5, 2026" tabindex="-1"&gt;5&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 6, 2026" tabindex="-1"&gt;6&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 7, 2026" tabindex="-1"&gt;7&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 8, 2026" tabindex="-1"&gt;8&lt;/span&gt;&lt;span class="flatpickr-day nextMonthDay" aria-label="May 9, 2026" tabindex="-1"&gt;9&lt;/span&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;div id="select2-drop-mask" class="select2-drop-mask"&gt;&lt;/div&gt;<br/>
+  &lt;div class="select2-drop select2-with-searchbox select2-drop-active" id="select2-drop" style="left: 167.797px; width: 828px; top: 276.031px; bottom: auto;"&gt;<br/>
+   &lt;div class="select2-search"&gt;<br/>
+    &lt;label for="s2id_autogen8_search" class="select2-offscreen"&gt;*Customer&lt;/label&gt;&lt;input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-focused" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-8" id="s2id_autogen8_search" placeholder="" aria-activedescendant="select2-result-label-102"&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;ul class="select2-results" role="listbox" id="select2-results-8"&gt;<br/>
+    &lt;li class="select2-results-dept-0 select2-result select2-result-selectable select2-highlighted" role="presentation"&gt;<br/>
+     &lt;div class="select2-result-label" id="select2-result-label-102" role="option"&gt;<br/>
+      &lt;span class="select2-match"&gt;Alfreds Futterkiste&lt;/span&gt; [ALFKI]<br/>
+     &lt;/div&gt;&lt;/li&gt;<br/>
+   &lt;/ul&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
