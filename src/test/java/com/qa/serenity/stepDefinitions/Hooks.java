@@ -21,5 +21,7 @@ public class Hooks {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled("user");
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisDriver));
+        // Maximizar la ventana del navegador
+//        hisDriver.manage().window().maximize();
     }
 }

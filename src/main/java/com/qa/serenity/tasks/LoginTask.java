@@ -20,9 +20,12 @@ public class LoginTask implements Task {
     @Override
     public <T extends Actor> void performAs(T t) {
 
+
+        var dataMap = data.asMaps(String.class, String.class).get(0);
+
         t.attemptsTo(
-                EnterText.into(USERNAME_INPUT, String.valueOf(data.cell(0, 0))),
-                EnterText.into(PWD_INPUT, String.valueOf(data.cell(1, 0))),
+                EnterText.into(USERNAME_INPUT, dataMap.get("user")),
+                EnterText.into(PWD_INPUT, dataMap.get("password")),
                 ClickOn.element(LOGIN_BTN)
         );
     }

@@ -30,14 +30,14 @@ public class OrderValidation implements Question<Boolean> {
         String actualDate = Text.of(RECENT_ORDER_DATE).answeredBy(actor);
 
         // Ajustar el formato de la fecha real al formato esperado
-        DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy"); // Formato de la fecha real
-        DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy"); // Formato esperado
+        DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         LocalDate actualDateFormatted = LocalDate.parse(actualDate, inputFormatter);
         String actualDateReformatted = actualDateFormatted.format(outputFormatter);
 
         return actualCustomer.contains(expectedCustomer)
                 && actualEmployee.contains(expectedEmployee)
-                && actualDateReformatted.equals(expectedDate); // Comparar fechas en el mismo formato
+                && actualDateReformatted.equals(expectedDate);
     }
 }
